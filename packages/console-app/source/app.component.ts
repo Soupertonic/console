@@ -1,8 +1,8 @@
-import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { Component } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
 
 @Component({
-  selector: "console-app",
+  selector: 'console-app',
   standalone: true,
   imports: [RouterOutlet],
   template: `<router-outlet></router-outlet>`,

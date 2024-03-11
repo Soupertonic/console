@@ -1,9 +1,9 @@
-import { ApplicationConfig } from "@angular/core";
-import { provideRouter } from "@angular/router";
+import { ApplicationConfig } from '@angular/core'
+import { provideRouter } from '@angular/router'
 
-import { routes } from "./app.routes";
-import { provideNoopNgZone } from "./app.providers";
+import { routes } from './app.routes'
+import { provideNoopNgZone } from './app.providers'
 
 export const config: ApplicationConfig = {
   providers: [provideRouter(routes), provideNoopNgZone()],
-};
+}
