@@ -1,16 +1,8 @@
-import {
-  ApplicationConfig,
-  NgZone,
-  Provider,
-  ɵNoopNgZone,
-} from "@angular/core";
+import { ApplicationConfig } from "@angular/core";
 import { provideRouter } from "@angular/router";
 
 import { routes } from "./app.routes";
-
-const provideNoopNgZone = (): Provider => {
-  return { provide: NgZone, useClass: ɵNoopNgZone };
-};
+import { provideNoopNgZone } from "./app.providers";
 
 export const config: ApplicationConfig = {
   providers: [provideRouter(routes), provideNoopNgZone()],
