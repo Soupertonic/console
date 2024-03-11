@@ -4,7 +4,6 @@
   "scripts": {
     "app:serve": "ng serve console-app",
     "app:build": "ng build console-app",
-    "app:watch": "ng build console-app --watch --configuration development",
     "app:test": "ng test console-app",
     "source:format": "prettier --config prettier.config.js --parser typescript 'packages/**/*.ts' --write"
   },
