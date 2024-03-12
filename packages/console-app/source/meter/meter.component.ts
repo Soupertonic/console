@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core'
+import { Component, input } from '@angular/core'
 import { MeterLabel } from './meter-label.component'
 import { MeterValue } from './meter-value.component'
 import { ProgressBar } from '../progress-bar'
