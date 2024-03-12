@@ -1,11 +1,12 @@
 import { Component, computed, input } from '@angular/core'
 import { MeterLabel } from './meter-label.component'
 import { MeterValue } from './meter-value.component'
+import { ProgressBar } from '../progress-bar'
 
 @Component({
   selector: 'console-meter',
   standalone: true,
-  imports: [],
+  imports: [ProgressBar],
   template: `
     <div class="meter">
       @if (label) {
@@ -15,11 +16,12 @@ import { MeterValue } from './meter-value.component'
         @if (value) {
           <div class="meter-value">{{ value.text() }}</div>
         }
-        <div class="meter-bar">
-          <div class="meter-bar-segment occupied" style="--percentage: {{ percentage() }}%"></div>
-          <div class="meter-bar-head"></div>
-          <div class="meter-bar-segment remaining"></div>
-        </div>
+        <console-progress-bar
+          [minimum]="minimum()"
+          [mean]="mean()"
+          [maximum]="maximum()"
+          [size]="'slim'"
+        />
       </div>
     </div>
   `,
@@ -39,41 +41,12 @@ import { MeterValue } from './meter-value.component'
     `
       .meter-presence {
         display: flex;
+        align-items: center;
         gap: 10px;
       }
     `,
     `
-      .meter-bar {
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-      }
-    `,
-    `
-      .meter-bar-head {
-        height: 10px;
-        width: 3px;
-        background-color: #969696;
-        border-radius: 10px;
-      }
-    `,
-    `
-      .meter-bar-segment {
-        height: 3px;
-      }
-    `,
-    `
-      .meter-bar-segment.occupied {
-        width: var(--percentage);
-        background-color: #000000;
-        border-radius: 10px 0px 0px 10px;
-        transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
-      }
-    `,
-    `
-      .meter-bar-segment.remaining {
-        background-color: #d9d9d9;
-        border-radius: 0px 10px 10px 0px;
+      console-progress-bar {
         flex-grow: 1;
       }
     `,
@@ -84,7 +57,10 @@ export class Meter {
   public mean = input.required<number>()
   public maximum = input.required<number>()
 
-  protected percentage = computed(() => ((this.mean() - this.minimum()) * 100) / (this.maximum() - this.minimum()))
+  protected percentage = computed(
+    () =>
+      ((this.mean() - this.minimum()) * 100) / (this.maximum() - this.minimum())
+  )
 
   protected label: MeterLabel | undefined
   protected value: MeterValue | undefined
