@@ -5,7 +5,7 @@
     "app:serve": "ng serve console-app",
     "app:build": "ng build console-app",
     "app:test": "ng test console-app",
-    "source:format": "prettier --config prettier.config.js --parser typescript 'packages/**/*.ts' --write"
+    "source:format": "prettier --config .prettierrc --parser typescript 'packages/**/*.ts' --write"
   },
   "private": true,
   "dependencies": {
