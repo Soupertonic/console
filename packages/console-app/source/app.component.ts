@@ -2,11 +2,12 @@ import { Component, signal } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 
 import { Meter, MeterLabel, MeterValue } from './meter'
+import { ProgressBar } from './progress-bar'
 
 @Component({
   selector: 'console-app',
   standalone: true,
-  imports: [RouterOutlet, Meter, MeterLabel, MeterValue],
+  imports: [RouterOutlet, Meter, MeterLabel, MeterValue, ProgressBar],
   template: `
     <router-outlet></router-outlet>
 
@@ -14,9 +15,24 @@ import { Meter, MeterLabel, MeterValue } from './meter'
     <button (click)="b()">-</button>
     <br />
     <br />
-    <console-meter [minimum]="0" [mean]="currentPlayerCount()" [maximum]="maximumPlayerCount()">
+    <console-progress-bar
+      [minimum]="0"
+      [mean]="currentPlayerCount()"
+      [maximum]="maximumPlayerCount()"
+      [size]="'slim'"
+      [mode]="'static'"
+    />
+    <br />
+    <br />
+    <console-meter
+      [minimum]="0"
+      [mean]="currentPlayerCount()"
+      [maximum]="maximumPlayerCount()"
+    >
       <console-meter-label [text]="'Spieleranzahl'" />
-      <console-meter-value [text]="currentPlayerCount() + ' / ' + maximumPlayerCount()" />
+      <console-meter-value
+        [text]="currentPlayerCount() + ' / ' + maximumPlayerCount()"
+      />
     </console-meter>
   `,
   styles: ``,
