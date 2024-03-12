@@ -57,11 +57,6 @@ export class Meter {
   public mean = input.required<number>()
   public maximum = input.required<number>()
 
-  protected percentage = computed(
-    () =>
-      ((this.mean() - this.minimum()) * 100) / (this.maximum() - this.minimum())
-  )
-
   protected label: MeterLabel | undefined
   protected value: MeterValue | undefined
 
