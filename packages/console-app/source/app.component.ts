@@ -1,11 +1,34 @@
-import { Component } from '@angular/core'
+import { Component, signal } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
+
+import { Meter, MeterLabel, MeterValue } from './meter'
 
 @Component({
   selector: 'console-app',
   standalone: true,
-  imports: [RouterOutlet],
-  template: `<router-outlet></router-outlet>`,
+  imports: [RouterOutlet, Meter, MeterLabel, MeterValue],
+  template: `
+    <router-outlet></router-outlet>
+
+    <button (click)="f()">+</button>
+    <button (click)="b()">-</button>
+    <br />
+    <br />
+    <console-meter [minimum]="0" [mean]="currentPlayerCount()" [maximum]="maximumPlayerCount()">
+      <console-meter-label [text]="'Spieleranzahl'" />
+      <console-meter-value [text]="currentPlayerCount() + ' / ' + maximumPlayerCount()" />
+    </console-meter>
+  `,
   styles: ``,
 })
-export class AppComponent {}
+export class AppComponent {
+  currentPlayerCount = signal(0)
+  maximumPlayerCount = signal(100)
+
+  f() {
+    this.currentPlayerCount.update((v) => v + 5)
+  }
+  b() {
+    this.currentPlayerCount.update((v) => v - 5)
+  }
+}
