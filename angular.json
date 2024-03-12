@@ -20,6 +20,7 @@
             "index": "packages/console-app/index.html",
             "browser": "packages/console-app/source/app.ts",
             "tsConfig": "packages/console-app/tsconfig.app.json",
+            "polyfills": ["zone.js"],
             "assets": [
               {
                 "glob": "index.ico",
