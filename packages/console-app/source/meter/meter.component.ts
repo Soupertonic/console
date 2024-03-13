@@ -2,15 +2,16 @@ import { Component, input } from '@angular/core'
 import { MeterLabel } from './meter-label.component'
 import { MeterValue } from './meter-value.component'
 import { ProgressBar } from '../progress-bar'
+import { Label } from '../label'
 
 @Component({
   selector: 'console-meter',
   standalone: true,
-  imports: [ProgressBar],
+  imports: [Label, ProgressBar],
   template: `
     <div class="meter">
       @if (label) {
-        <div class="meter-label">{{ label.text() }}</div>
+        <console-label [content]="label.text()" />
       }
       <div class="meter-presence">
         @if (value) {
