@@ -19,20 +19,13 @@ import { ProgressBar } from './progress-bar'
       [minimum]="0"
       [mean]="currentPlayerCount()"
       [maximum]="maximumPlayerCount()"
-      [size]="'slim'"
-      [mode]="'static'"
+      [mode]="'indeterminate'"
     />
     <br />
     <br />
-    <console-meter
-      [minimum]="0"
-      [mean]="currentPlayerCount()"
-      [maximum]="maximumPlayerCount()"
-    >
+    <console-meter [minimum]="0" [mean]="currentPlayerCount()" [maximum]="maximumPlayerCount()">
       <console-meter-label [text]="'Spieleranzahl'" />
-      <console-meter-value
-        [text]="currentPlayerCount() + ' / ' + maximumPlayerCount()"
-      />
+      <console-meter-value [text]="currentPlayerCount() + ' / ' + maximumPlayerCount()" />
     </console-meter>
   `,
   styles: ``,
@@ -42,9 +35,9 @@ export class AppComponent {
   maximumPlayerCount = signal(100)
 
   f() {
-    this.currentPlayerCount.update((v) => v + 5)
+    this.currentPlayerCount.update((v) => v + 0.25)
   }
   b() {
-    this.currentPlayerCount.update((v) => v - 5)
+    this.currentPlayerCount.update((v) => v - 0.25)
   }
 }

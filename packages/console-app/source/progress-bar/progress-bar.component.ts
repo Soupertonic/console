@@ -93,8 +93,7 @@ export class ProgressBar {
   public mode = input<'static' | 'indeterminate'>('static')
 
   protected percentage = computed(
-    () =>
-      ((this.mean() - this.minimum()) * 100) / (this.maximum() - this.minimum())
+    () => ((this.mean() - this.minimum()) * 100) / (this.maximum() - this.minimum())
   )
 
   protected get useSlimSize(): boolean {
