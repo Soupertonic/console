@@ -11,6 +11,8 @@ import { Component, computed, input } from '@angular/core'
         style="--percentage: {{ percentage() }}%"
         [class.slim]="useSlimSize"
         [class.regular]="useRegularSize"
+        [class.static]="useStaticMode"
+        [class.indeterminate]="useIndeterminateMode"
       ></div>
       <div
         class="progress-bar-segment remaining"
@@ -47,7 +49,8 @@ import { Component, computed, input } from '@angular/core'
       }
     `,
     `
-      .progress-bar-segment.occupied {
+      .progress-bar-segment.occupied.static,
+      .progress-bar-segment.occupied.indeterminate {
         width: var(--percentage);
         background-color: #000000;
         transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
