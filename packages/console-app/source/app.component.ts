@@ -15,12 +15,22 @@ import { ProgressBar } from './progress-bar'
     <button (click)="b()">-</button>
     <br />
     <br />
-    <console-progress-bar
-      [minimum]="0"
-      [mean]="currentPlayerCount()"
-      [maximum]="maximumPlayerCount()"
-      [mode]="'indeterminate'"
-    />
+    <br />
+    <br />
+    <div style="display: flex; flex-direction: column; gap: 30px; width: 50%;">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <h2 style="margin: 0;">Ein wenig Geduld</h2>
+        <span>Wir migrieren deine alte Konsole zur neuen Konsole</span>
+      </div>
+      <console-progress-bar
+        [minimum]="0"
+        [mean]="currentPlayerCount()"
+        [maximum]="maximumPlayerCount()"
+        [mode]="'indeterminate'"
+      />
+    </div>
+    <br />
+    <br />
     <br />
     <br />
     <console-meter [minimum]="0" [mean]="currentPlayerCount()" [maximum]="maximumPlayerCount()">
@@ -35,9 +45,9 @@ export class AppComponent {
   maximumPlayerCount = signal(100)
 
   f() {
-    this.currentPlayerCount.update((v) => v + 0.25)
+    this.currentPlayerCount.update((v) => v + 2)
   }
   b() {
-    this.currentPlayerCount.update((v) => v - 0.25)
+    this.currentPlayerCount.update((v) => v - 2)
   }
 }
