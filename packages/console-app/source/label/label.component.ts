@@ -9,10 +9,10 @@ import { Component, input } from '@angular/core'
     `
       :host {
         font-family: 'Inter';
-        font-weight: 400;
+        font-weight: 500;
         font-size: 14px;
         letter-spacing: -0.016em;
-        color: #969696;
+        color: #000000;
       }
     `,
   ],
