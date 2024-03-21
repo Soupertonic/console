@@ -4,11 +4,11 @@ import { Meter, MeterLabel, MeterValue } from './components/meter'
 import { ProgressBar } from './components/progress-bar'
 
 @Component({
+  standalone: true,
   selector: 'console-app',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   encapsulation: ViewEncapsulation.ShadowDom,
-  standalone: true,
   imports: [RouterOutlet, Meter, MeterLabel, MeterValue, ProgressBar],
 })
 export class AppComponent {

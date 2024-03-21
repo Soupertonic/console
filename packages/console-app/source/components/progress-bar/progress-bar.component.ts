@@ -1,11 +1,11 @@
 import { Component, ViewEncapsulation, computed, input } from '@angular/core'
 
 @Component({
+  standalone: true,
   selector: 'console-progress-bar',
   templateUrl: './progress-bar.component.html',
   styleUrl: './progress-bar.component.css',
   encapsulation: ViewEncapsulation.ShadowDom,
-  standalone: true,
   imports: [],
 })
 export class ProgressBar {

@@ -4,11 +4,11 @@ import { MeterValue } from './meter-value.component'
 import { ProgressBar } from '../progress-bar'
 
 @Component({
+  standalone: true,
   selector: 'console-meter',
   templateUrl: './meter.component.html',
   styleUrl: './meter.component.css',
   encapsulation: ViewEncapsulation.ShadowDom,
-  standalone: true,
   imports: [ProgressBar],
 })
 export class Meter {

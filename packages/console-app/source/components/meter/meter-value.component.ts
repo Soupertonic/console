@@ -2,11 +2,11 @@ import { Component, OnInit, ViewEncapsulation, inject, input } from '@angular/co
 import { Meter } from './meter.component'
 
 @Component({
+  standalone: true,
   selector: 'console-meter-value',
   templateUrl: './meter-value.component.html',
   styleUrl: './meter-value.component.css',
   encapsulation: ViewEncapsulation.ShadowDom,
-  standalone: true,
   imports: [],
 })
 export class MeterValue implements OnInit {
