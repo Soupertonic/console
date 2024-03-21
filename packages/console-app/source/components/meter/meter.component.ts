@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core'
+import { Component, ViewEncapsulation, input } from '@angular/core'
 import { MeterLabel } from './meter-label.component'
 import { MeterValue } from './meter-value.component'
 import { ProgressBar } from '../progress-bar'
@@ -7,6 +7,7 @@ import { ProgressBar } from '../progress-bar'
   selector: 'console-meter',
   standalone: true,
   imports: [ProgressBar],
+  encapsulation: ViewEncapsulation.ShadowDom,
   template: `
     <div class="meter">
       @if (label) {
