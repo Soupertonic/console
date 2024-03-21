@@ -1,8 +1,7 @@
 import { Component, signal } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
-
-import { Meter, MeterLabel, MeterValue } from './components/statistical/meter'
-import { ProgressBar } from './components/statistical/progress-bar'
+import { Meter, MeterLabel, MeterValue } from './components/meter'
+import { ProgressBar } from './components/progress-bar'
 
 @Component({
   selector: 'console-app',
