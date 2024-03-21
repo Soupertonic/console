@@ -1,0 +1,16 @@
+<div class="meter">
+  @if (label) {
+    <div class="meter-label">{{ label.text() }}</div>
+  }
+  <div class="meter-presence">
+    @if (value) {
+      <div class="meter-value">{{ value.text() }}</div>
+    }
+    <console-progress-bar
+      [minimum]="minimum()"
+      [mean]="mean()"
+      [maximum]="maximum()"
+      [size]="'slim'"
+    />
+  </div>
+</div>

@@ -5,53 +5,11 @@ import { ProgressBar } from '../progress-bar'
 
 @Component({
   selector: 'console-meter',
+  templateUrl: './meter.component.html',
+  styleUrl: './meter.component.css',
+  encapsulation: ViewEncapsulation.ShadowDom,
   standalone: true,
   imports: [ProgressBar],
-  encapsulation: ViewEncapsulation.ShadowDom,
-  template: `
-    <div class="meter">
-      @if (label) {
-        <div class="meter-label">{{ label.text() }}</div>
-      }
-      <div class="meter-presence">
-        @if (value) {
-          <div class="meter-value">{{ value.text() }}</div>
-        }
-        <console-progress-bar
-          [minimum]="minimum()"
-          [mean]="mean()"
-          [maximum]="maximum()"
-          [size]="'slim'"
-        />
-      </div>
-    </div>
-  `,
-  styles: [
-    `
-      :host {
-        display: block;
-      }
-    `,
-    `
-      .meter {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-    `,
-    `
-      .meter-presence {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-    `,
-    `
-      console-progress-bar {
-        flex-grow: 1;
-      }
-    `,
-  ],
 })
 export class Meter {
   public minimum = input.required<number>()

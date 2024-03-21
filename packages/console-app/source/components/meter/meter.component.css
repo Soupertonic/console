@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+.meter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meter-presence {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+console-progress-bar {
+  flex-grow: 1;
+}

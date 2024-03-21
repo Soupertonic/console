@@ -2,88 +2,11 @@ import { Component, ViewEncapsulation, computed, input } from '@angular/core'
 
 @Component({
   selector: 'console-progress-bar',
+  templateUrl: './progress-bar.component.html',
+  styleUrl: './progress-bar.component.css',
+  encapsulation: ViewEncapsulation.ShadowDom,
   standalone: true,
   imports: [],
-  encapsulation: ViewEncapsulation.ShadowDom,
-  template: `
-    <div
-      class="progress-bar-segment occupied"
-      style="--percentage: {{ percentage() }}%"
-      [class.slim]="useSlimSize"
-      [class.regular]="useRegularSize"
-      [class.static]="useStaticMode"
-      [class.indeterminate]="useIndeterminateMode"
-    ></div>
-    <div
-      class="progress-bar-segment remaining"
-      [class.slim]="useSlimSize"
-      [class.regular]="useRegularSize"
-      [class.static]="useStaticMode"
-      [class.indeterminate]="useIndeterminateMode"
-    ></div>
-  `,
-  styles: [
-    `
-      :host {
-        overflow: hidden;
-        border-radius: 10px;
-        display: grid;
-        align-items: center;
-      }
-    `,
-    `
-      .progress-bar-segment.slim {
-        height: 3px;
-      }
-    `,
-    `
-      .progress-bar-segment.regular {
-        height: 10px;
-      }
-    `,
-    `
-      .progress-bar-segment.occupied.static,
-      .progress-bar-segment.occupied.indeterminate {
-        grid-column: 1;
-        grid-row: 1;
-        z-index: 999;
-        width: var(--percentage);
-        background-color: #000000;
-        border-radius: 100px;
-        transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
-      }
-    `,
-    `
-      .progress-bar-segment.remaining.static {
-        background-color: #d9d9d9;
-        flex-grow: 1;
-        grid-column: 1;
-        grid-row: 1;
-      }
-    `,
-    `
-      .progress-bar-segment.remaining.indeterminate {
-        grid-column: 1;
-        grid-row: 1;
-        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAyCAIAAAAm4OfBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA/ElEQVRIia3SMQ7EIAxE0VlCQ5H7Xyq3iRQaLG0ThWSXgD3G3TRfr/Bn27Z1XUGdiOz7fs2QUuJCAI7juM8QY+RCpRQRueayLIFG5ZzvM6VEtv5RMUay9Y8CwLSaKLLVRDGtNxTTekOZWx2UudVB2Vp9lK3VRxlaQ5ShNURpWxqUtqVBqVpKlKqlRI1betS4pUcNWibUoGVC9VpWVK9lRb22CNRri0C1Wxyq3eJQjRaNarRo1G/Lg/pteVCPlhP1aDlRteVH1ZYfdbamoM7WFBSAMAsFIMxCAQizUKWUx997UDnn2nKiRKS2nChcv+pH1ZYfdbamoM7WFBSALzVG47zsY1MzAAAAAElFTkSuQmCC');
-        background-repeat: repeat;
-        background-size: 6.5px;
-        animation-name: progress-bar-indeterminate;
-        animation-duration: 250ms;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes progress-bar-indeterminate {
-        from {
-          background-position: 0 0;
-        }
-        to {
-          background-position: 6.5px 0;
-        }
-      }
-    `,
-  ],
 })
 export class ProgressBar {
   public minimum = input.required<number>()
