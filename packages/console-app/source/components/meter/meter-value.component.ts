@@ -4,8 +4,8 @@ import { Meter } from './meter.component'
 @Component({
   standalone: true,
   selector: 'console-meter-value',
-  templateUrl: './meter-value.component.html',
-  styleUrl: './meter-value.component.css',
+  templateUrl: 'meter-value.component.html',
+  styleUrl: 'meter-value.component.css',
   encapsulation: ViewEncapsulation.ShadowDom,
   imports: [],
 })

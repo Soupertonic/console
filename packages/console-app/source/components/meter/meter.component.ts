@@ -6,8 +6,8 @@ import { ProgressBar } from '../progress-bar'
 @Component({
   standalone: true,
   selector: 'console-meter',
-  templateUrl: './meter.component.html',
-  styleUrl: './meter.component.css',
+  templateUrl: 'meter.component.html',
+  styleUrl: 'meter.component.css',
   encapsulation: ViewEncapsulation.ShadowDom,
   imports: [ProgressBar],
 })
