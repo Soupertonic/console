@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+.meter-label {
+  text-wrap: nowrap;
+}
+
 .meter-presence {
   display: flex;
   align-items: center;
