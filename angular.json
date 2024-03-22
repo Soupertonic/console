@@ -85,9 +85,14 @@
           "defaultConfiguration": "development-de"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "ng-extract-i18n-merge:ng-extract-i18n-merge",
           "options": {
-            "buildTarget": "console-app:build"
+            "buildTarget": "console-app:build",
+            "format": "xlf",
+            "outputPath": "packages/console-app/assets/locales",
+            "targetFiles": [
+              "messages.en.xlf"
+            ]
           }
         },
         "test": {
