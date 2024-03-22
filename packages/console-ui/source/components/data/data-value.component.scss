@@ -1,0 +1,6 @@
+@use 'typography';
+
+:host {
+  text-wrap: nowrap;
+  @include typography.font-text-emphasized;
+}
