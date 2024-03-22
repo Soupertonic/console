@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, inject, input } from '@angular/core'
+import { Component, OnInit, inject, input } from '@angular/core'
 import { Meter } from './meter.component'
 
 @Component({
@@ -6,7 +6,6 @@ import { Meter } from './meter.component'
   selector: 'console-meter-label',
   templateUrl: 'meter-label.component.html',
   styleUrl: 'meter-label.component.css',
-  encapsulation: ViewEncapsulation.ShadowDom,
   imports: [],
 })
 export class MeterLabel implements OnInit {

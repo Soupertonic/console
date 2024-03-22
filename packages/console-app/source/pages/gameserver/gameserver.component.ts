@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core'
+import { Component } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 
 @Component({
@@ -6,7 +6,6 @@ import { RouterOutlet } from '@angular/router'
   selector: 'console-gameserver',
   templateUrl: 'gameserver.component.html',
   styleUrl: 'gameserver.component.css',
-  encapsulation: ViewEncapsulation.ShadowDom,
   imports: [RouterOutlet],
 })
 export class GameserverComponent {}

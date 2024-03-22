@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, inject, input } from '@angular/core'
+import { Component, OnInit, inject, input } from '@angular/core'
 import { Meter } from './meter.component'
 
 @Component({
@@ -6,7 +6,6 @@ import { Meter } from './meter.component'
   selector: 'console-meter-value',
   templateUrl: 'meter-value.component.html',
   styleUrl: 'meter-value.component.css',
-  encapsulation: ViewEncapsulation.ShadowDom,
   imports: [],
 })
 export class MeterValue implements OnInit {
