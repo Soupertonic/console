@@ -1,61 +1,61 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="de" datatype="plaintext" original="ng2.template">
+<?xml version="1.0"?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" target-language="de" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="gameserverMenuOverviewLink" datatype="html">
-        <source>Überblick</source>
-        <target state="">Overview</target>
+        <source>Overview</source>
+        <target>Überblick</target>
       </trans-unit>
       <trans-unit id="gameserverMenuConsoleLink" datatype="html">
-        <source>Konsole</source>
-        <target state="">Console</target>
+        <source>Console</source>
+        <target>Konsole</target>
       </trans-unit>
       <trans-unit id="gameserverMenuPluginsLink" datatype="html">
         <source>Plugins</source>
-        <target state="">Plugins</target>
+        <target state="new">Plugins</target>
       </trans-unit>
       <trans-unit id="gameserverMenuPlayersLink" datatype="html">
-        <source>Spieler</source>
-        <target state="">Players</target>
+        <source>Players</source>
+        <target>Players</target>
       </trans-unit>
       <trans-unit id="gameserverMenuActionsLink" datatype="html">
-        <source>Aktionen</source>
-        <target state="">Actions</target>
+        <source>Actions</source>
+        <target>Aktionen</target>
       </trans-unit>
       <trans-unit id="gameserverMenuLogsLink" datatype="html">
-        <source>Protokoll</source>
-        <target state="">Logs</target>
+        <source>Logs</source>
+        <target>Protokoll</target>
       </trans-unit>
       <trans-unit id="gameserverMenuStatisticsLink" datatype="html">
-        <source>Statistiken</source>
-        <target state="">Statistics</target>
+        <source>Statistics</source>
+        <target>Statistiken</target>
       </trans-unit>
       <trans-unit id="gameserverMenuFilesLink" datatype="html">
-        <source>Dateien</source>
-        <target state="">Files</target>
+        <source>Files</source>
+        <target>Dateien</target>
       </trans-unit>
       <trans-unit id="gameserverMenuDatabasesLink" datatype="html">
-        <source>Datenbanken</source>
-        <target state="">Databases</target>
+        <source>Databases</source>
+        <target>Datenbanken</target>
       </trans-unit>
       <trans-unit id="gameserverMenuBackupsLink" datatype="html">
-        <source>Datensicherungen</source>
-        <target state="">Backups</target>
+        <source>Backups</source>
+        <target>Datensicherungen</target>
       </trans-unit>
       <trans-unit id="gameserverVitalsPlayerCount" datatype="html">
-        <source>Spieleranzahl</source>
-        <target>Player Count</target>
+        <source>Player Count</source>
+        <target>Spieleranzahl</target>
       </trans-unit>
       <trans-unit id="gameserverVitalsCpuUsage" datatype="html">
-        <source>CPU-Auslastung</source>
-        <target>CPU Usage</target>
+        <source>CPU Usage</source>
+        <target>CPU-Auslastung</target>
       </trans-unit>
       <trans-unit id="gameserverVitalsRamUsage" datatype="html">
-        <source>RAM-Auslastung</source>
-        <target>RAM Usage</target>
+        <source>RAM Usage</source>
+        <target>RAM-Auslastung</target>
       </trans-unit>
       <trans-unit id="gameserverVitalsIoUsage" datatype="html">
-        <source>I/O-Auslastung</source>
-        <target>I/O Usage</target>
+        <source>I/O Usage</source>
+        <target>I/O-Auslastung</target>
       </trans-unit>
     </body>
   </file>
