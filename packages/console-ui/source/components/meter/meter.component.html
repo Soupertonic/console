@@ -1,5 +1,5 @@
 <ng-content select="console-meter-label"></ng-content>
-<div class="meter-presence">
+<console-meter-data>
   <ng-content select="console-meter-value"></ng-content>
   <console-progress-bar
     [minimum]="minimum()"
@@ -7,4 +7,4 @@
     [maximum]="maximum()"
     [size]="'slim'"
   />
-</div>
+</console-meter-data>

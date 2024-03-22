@@ -3,12 +3,6 @@
   flex-direction: column;
 }
 
-.meter-presence {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 console-progress-bar {
   width: 65px;
 }

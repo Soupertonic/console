@@ -1,4 +1,6 @@
 import { Component, input } from '@angular/core'
+
+import { MeterData } from './meter-data.component'
 import { ProgressBar } from '../progress-bar'
 
 @Component({
@@ -6,7 +8,7 @@ import { ProgressBar } from '../progress-bar'
   selector: 'console-meter',
   templateUrl: 'meter.component.html',
   styleUrl: 'meter.component.css',
-  imports: [ProgressBar],
+  imports: [MeterData, ProgressBar],
 })
 export class Meter {
   public minimum = input.required<number>()
