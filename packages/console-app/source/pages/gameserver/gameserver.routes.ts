@@ -1,80 +1,50 @@
 import { Route } from '@angular/router'
-import { GameserverComponent } from './gameserver.component'
+import { Gameserver } from './gameserver.component'
 
 export default [
   {
     path: ':id',
-    component: GameserverComponent,
+    component: Gameserver,
     children: [
       {
         path: 'actions',
-        loadComponent: () =>
-          import('./features/actions/gameserver-actions.component').then(
-            (c) => c.GameserverActionsComponent
-          ),
+        loadComponent: () => import('./features/actions').then((c) => c.GameserverActions),
       },
       {
         path: 'backups',
-        loadComponent: () =>
-          import('./features/backups/gameserver-backups.component').then(
-            (c) => c.GameserverBackupsComponent
-          ),
+        loadComponent: () => import('./features/backups').then((c) => c.GameserverBackups),
       },
       {
         path: 'databases',
-        loadComponent: () =>
-          import('./features/databases/gameserver-databases.component').then(
-            (c) => c.GameserverDatabasesComponent
-          ),
+        loadComponent: () => import('./features/databases').then((c) => c.GameserverDatabases),
       },
       {
         path: 'files',
-        loadComponent: () =>
-          import('./features/files/gameserver-files.component').then(
-            (c) => c.GameserverFilesComponent
-          ),
+        loadComponent: () => import('./features/files').then((c) => c.GameserverFiles),
       },
       {
         path: 'logs',
-        loadComponent: () =>
-          import('./features/logs/gameserver-logs.component').then(
-            (c) => c.GameserverLogsComponent
-          ),
+        loadComponent: () => import('./features/logs').then((c) => c.GameserverLogs),
       },
       {
         path: 'overview',
-        loadComponent: () =>
-          import('./features/overview/gameserver-overview.component').then(
-            (c) => c.GameserverOverviewComponent
-          ),
+        loadComponent: () => import('./features/overview').then((c) => c.GameserverOverview),
       },
       {
         path: 'players',
-        loadComponent: () =>
-          import('./features/players/gameserver-players.component').then(
-            (c) => c.GameserverPlayersComponent
-          ),
+        loadComponent: () => import('./features/players').then((c) => c.GameserverPlayers),
       },
       {
         path: 'plugins',
-        loadComponent: () =>
-          import('./features/plugins/gameserver-plugins.component').then(
-            (c) => c.GameserverPluginsComponent
-          ),
+        loadComponent: () => import('./features/plugins').then((c) => c.GameserverPlugins),
       },
       {
         path: 'statistics',
-        loadComponent: () =>
-          import('./features/statistics/gameserver-statistics.component').then(
-            (c) => c.GameserverStatisticsComponent
-          ),
+        loadComponent: () => import('./features/statistics').then((c) => c.GameserverStatistics),
       },
       {
         path: 'terminal',
-        loadComponent: () =>
-          import('./features/terminal/gameserver-terminal.component').then(
-            (c) => c.GameserverTerminalComponent
-          ),
+        loadComponent: () => import('./features/terminal').then((c) => c.GameserverTerminal),
       },
       {
         path: '',
