@@ -7,7 +7,8 @@
   flex-direction: column;
 }
 
-.meter-label {
+.meter-label,
+.meter-value {
   text-wrap: nowrap;
 }
 
