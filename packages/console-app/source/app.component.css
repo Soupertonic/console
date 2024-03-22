@@ -4,4 +4,5 @@
   grid-template-columns: 85px 1fr;
   grid-template-rows: 1fr;
   background: red;
+  gap: 2.5px;
 }

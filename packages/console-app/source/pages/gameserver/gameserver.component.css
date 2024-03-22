@@ -3,6 +3,7 @@
   grid-template-columns: 275px 1fr 1fr min-content;
   grid-template-rows: 90px 1fr;
   background: blue;
+  gap: 2.5px;
 }
 
 .gameserver-selector {
