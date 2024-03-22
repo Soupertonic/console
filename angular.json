@@ -12,6 +12,12 @@
       "root": "packages/console-app",
       "sourceRoot": "packages/console-app/src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "de",
+        "locales": {
+          "en": "packages/console-app/assets/locales/messages.en.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -46,18 +52,6 @@
               "extractLicenses": false,
               "sourceMap": false,
               "namedChunks": false,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
               "outputHashing": "all"
             },
             "development": {
@@ -66,6 +60,14 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "locale-de": {
+              "localize": ["de"],
+              "baseHref": "/de/"
+            },
+            "locale-en": {
+              "localize": ["en"],
+              "baseHref": "/en/"
             }
           },
           "defaultConfiguration": "production"
@@ -73,14 +75,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "buildTarget": "console-app:build:production"
+            "development-de": {
+              "buildTarget": "console-app:build:development,locale-de"
             },
-            "development": {
-              "buildTarget": "console-app:build:development"
+            "development-en": {
+              "buildTarget": "console-app:build:development,locale-en"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development-de"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

@@ -2,15 +2,35 @@ gameserver menu board
 <br />
 <nav>
   <ul>
-    <li><a [routerLink]="['overview']">Überblick</a></li>
-    <li><a [routerLink]="['terminal']">Konsole</a></li>
-    <li><a [routerLink]="['plugins']">Plugins</a></li>
-    <li><a [routerLink]="['players']">Spieler</a></li>
-    <li><a [routerLink]="['actions']">Aktionen</a></li>
-    <li><a [routerLink]="['logs']">Protokoll</a></li>
-    <li><a [routerLink]="['statistics']">Statistiken</a></li>
-    <li><a [routerLink]="['files']">Dateien</a></li>
-    <li><a [routerLink]="['databases']">Datenbank</a></li>
-    <li><a [routerLink]="['backups']">Datensicherung</a></li>
+    <li>
+      <a i18n="@@gameserverMenuOverviewLink" [routerLink]="['overview']">Überblick</a>
+    </li>
+    <li>
+      <a i18n="@@gameserverMenuConsoleLink" [routerLink]="['terminal']">Konsole</a>
+    </li>
+    <li>
+      <a i18n="@@gameserverMenuPluginsLink" [routerLink]="['plugins']">Plugins</a>
+    </li>
+    <li>
+      <a i18n="@@gameserverMenuPlayersLink" [routerLink]="['players']">Spieler</a>
+    </li>
+    <li>
+      <a i18n="@@gameserverMenuActionsLink" [routerLink]="['actions']">Aktionen</a>
+    </li>
+    <li>
+      <a i18n="@@gameserverMenuLogsLink" [routerLink]="['logs']">Protokoll</a>
+    </li>
+    <li>
+      <a i18n="@@gameserverMenuStatisticsLink" [routerLink]="['statistics']">Statistiken</a>
+    </li>
+    <li>
+      <a i18n="@@gameserverMenuFilesLink" [routerLink]="['files']">Dateien</a>
+    </li>
+    <li>
+      <a i18n="@@gameserverMenuDatabasesLink" [routerLink]="['databases']">Datenbanken</a>
+    </li>
+    <li>
+      <a i18n="@@gameserverMenuBackupsLink" [routerLink]="['backups']">Datensicherungen</a>
+    </li>
   </ul>
 </nav>

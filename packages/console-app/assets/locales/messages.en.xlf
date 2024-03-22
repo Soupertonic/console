@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="gameserverMenuOverviewLink" datatype="html">
+        <source>Überblick</source>
+        <target state="">Overview</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameserverMenuConsoleLink" datatype="html">
+        <source>Konsole</source>
+        <target state="">Console</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">9,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameserverMenuPluginsLink" datatype="html">
+        <source>Plugins</source>
+        <target state="">Plugins</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameserverMenuPlayersLink" datatype="html">
+        <source>Spieler</source>
+        <target state="">Players</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">15,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameserverMenuActionsLink" datatype="html">
+        <source>Aktionen</source>
+        <target state="">Actions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">18,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameserverMenuLogsLink" datatype="html">
+        <source>Protokoll</source>
+        <target state="">Logs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameserverMenuStatisticsLink" datatype="html">
+        <source>Statistiken</source>
+        <target state="">Statistics</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">24,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameserverMenuFilesLink" datatype="html">
+        <source>Dateien</source>
+        <target state="">Files</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameserverMenuDatabasesLink" datatype="html">
+        <source>Datenbanken</source>
+        <target state="">Databases</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gameserverMenuBackupsLink" datatype="html">
+        <source>Datensicherungen</source>
+        <target state="">Backups</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">packages/console-app/source/pages/gameserver/components/menu-board/gameserver-menu-board.component.html</context>
+          <context context-type="linenumber">33,37</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
