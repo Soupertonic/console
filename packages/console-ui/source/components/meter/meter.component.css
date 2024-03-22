@@ -5,7 +5,6 @@
 .meter {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .meter-presence {
