@@ -1,15 +1,6 @@
 :host {
-  display: block;
-}
-
-.meter {
   display: flex;
   flex-direction: column;
-}
-
-.meter-label,
-.meter-value {
-  text-wrap: nowrap;
 }
 
 .meter-presence {

@@ -1,16 +1,10 @@
-<div class="meter">
-  @if (label) {
-    <div class="meter-label">{{ label.text() }}</div>
-  }
-  <div class="meter-presence">
-    @if (value) {
-      <div class="meter-value">{{ value.text() }}</div>
-    }
-    <console-progress-bar
-      [minimum]="minimum()"
-      [mean]="mean()"
-      [maximum]="maximum()"
-      [size]="'slim'"
-    />
-  </div>
+<ng-content select="console-meter-label"></ng-content>
+<div class="meter-presence">
+  <ng-content select="console-meter-value"></ng-content>
+  <console-progress-bar
+    [minimum]="minimum()"
+    [mean]="mean()"
+    [maximum]="maximum()"
+    [size]="'slim'"
+  />
 </div>

@@ -1,5 +1,4 @@
-import { Component, OnInit, inject, input } from '@angular/core'
-import { Meter } from './meter.component'
+import { Component } from '@angular/core'
 
 @Component({
   standalone: true,
@@ -8,16 +7,4 @@ import { Meter } from './meter.component'
   styleUrl: 'meter-label.component.css',
   imports: [],
 })
-export class MeterLabel implements OnInit {
-  public text = input.required<string>()
-
-  private _meter = inject(Meter)
-
-  public ngOnInit(): void {
-    this._assignSelfToMeter()
-  }
-
-  private _assignSelfToMeter(): void {
-    this._meter.assignLabel(this)
-  }
-}
+export class MeterLabel {}
