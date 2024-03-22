@@ -19,5 +19,5 @@
 }
 
 console-progress-bar {
-  flex-grow: 1;
+  width: 65px;
 }
