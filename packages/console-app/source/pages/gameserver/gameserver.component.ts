@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 import { RouterLink, RouterOutlet } from '@angular/router'
 
+import { GameserverActionsBoard } from './components/actions-board'
 import { GameserverIdBoard } from './components/id-board'
 import { GameserverMenuBoard } from './components/menu-board'
 import { GameserverUptimeBoard } from './components/uptime-board'
@@ -14,6 +15,7 @@ import { GameserverVitalsBoard } from './components/vitals-board'
   imports: [
     RouterOutlet,
     RouterLink,
+    GameserverActionsBoard,
     GameserverIdBoard,
     GameserverMenuBoard,
     GameserverUptimeBoard,
