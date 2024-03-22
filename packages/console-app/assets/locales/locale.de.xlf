@@ -1,95 +1,77 @@
-<?xml version="1.0" standalone="yes"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<?xml version="1.0" standalone="yes"?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" target-language="de" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="gameserver.menu.overview" datatype="html">
         <source> Overview </source>
         <target state="new">Überblick</target>
-        <note priority="1" from="description">Menu entry to navigate to game server overview</note>
       </trans-unit>
       <trans-unit id="gameserver.menu.console" datatype="html">
         <source> Console </source>
         <target state="new">Konsole</target>
-        <note priority="1" from="description">Menu entry to navigate to game server console</note>
       </trans-unit>
       <trans-unit id="gameserver.menu.plugins" datatype="html">
         <source> Plugins </source>
         <target state="new"> Plugins </target>
-        <note priority="1" from="description">Menu entry to navigate to game server plugins</note>
       </trans-unit>
       <trans-unit id="gameserver.menu.players" datatype="html">
         <source> Players </source>
         <target state="new">Players</target>
-        <note priority="1" from="description">Menu entry to navigate to game server players</note>
       </trans-unit>
       <trans-unit id="gameserver.menu.actions" datatype="html">
         <source> Actions </source>
         <target state="new">Aktionen</target>
-        <note priority="1" from="description">Menu entry to navigate to game server actions</note>
       </trans-unit>
       <trans-unit id="gameserver.menu.logs" datatype="html">
         <source> Logs </source>
         <target state="new">Protokoll</target>
-        <note priority="1" from="description">Menu entry to navigate to game server logs</note>
       </trans-unit>
       <trans-unit id="gameserver.menu.statistics" datatype="html">
         <source> Statistics </source>
         <target state="new">Statistiken</target>
-        <note priority="1" from="description">Menu entry to navigate to game server statistics</note>
       </trans-unit>
       <trans-unit id="gameserver.menu.files" datatype="html">
         <source> Files </source>
         <target state="new">Dateien</target>
-        <note priority="1" from="description">Menu entry to navigate to game server files</note>
       </trans-unit>
       <trans-unit id="gameserver.menu.databases" datatype="html">
         <source> Databases </source>
         <target state="new">Datenbanken</target>
-        <note priority="1" from="description">Menu entry to navigate to game server databases</note>
       </trans-unit>
       <trans-unit id="gameserver.menu.backups" datatype="html">
         <source> Backups </source>
         <target state="new">Datensicherungen</target>
-        <note priority="1" from="description">Menu entry to navigate to game server backups</note>
       </trans-unit>
       <trans-unit id="gameserver.vitals.player-count" datatype="html">
         <source> Player Count </source>
         <target state="new">Spieleranzahl</target>
-        <note priority="1" from="description">Vitals meter displaying current player count</note>
       </trans-unit>
       <trans-unit id="gameserver.vitals.cpu-usage" datatype="html">
         <source> CPU Usage </source>
         <target state="new">CPU-Auslastung</target>
-        <note priority="1" from="description">Vitals meter displaying current CPU usage</note>
       </trans-unit>
       <trans-unit id="gameserver.vitals.ram-usage" datatype="html">
         <source> RAM Usage </source>
         <target state="new">RAM-Auslastung</target>
-        <note priority="1" from="description">Vitals meter displaying current RAM usage</note>
       </trans-unit>
       <trans-unit id="gameserver.vitals.io-usage" datatype="html">
         <source> I/O Usage </source>
         <target state="new">I/O-Auslastung</target>
-        <note priority="1" from="description">Vitals meter displaying current I/O usage</note>
       </trans-unit>
       <trans-unit id="gameserver.uptime.status" datatype="html">
         <source> Status </source>
         <target state="new"> Status </target>
-        <note priority="1" from="description">Data displaying current server status</note>
       </trans-unit>
       <trans-unit id="gameserver.uptime.uptime" datatype="html">
         <source> Uptime </source>
         <target>Betriebszeit</target>
-        <note priority="1" from="description">Data displaying current server uptime</note>
       </trans-unit>
       <trans-unit id="gameserver.uptime.billing-rate" datatype="html">
         <source> Billing </source>
         <target>Abrechnung</target>
-        <note priority="1" from="description">Data displaying amount charged per hour the server has been up</note>
       </trans-unit>
       <trans-unit id="gameserver.uptime.billing-period" datatype="html">
         <source> Billing Period </source>
         <target>Abrechnungsperiode</target>
-        <note priority="1" from="description">Data displaying amount charged for every hour the server has been up</note>
       </trans-unit>
     </body>
   </file>
