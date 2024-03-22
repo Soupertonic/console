@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   standalone: true,
   selector: 'console-gameserver-actions-board',
   templateUrl: 'gameserver-actions-board.component.html',
-  styleUrl: 'gameserver-actions-board.component.css',
+  styleUrl: 'gameserver-actions-board.component.scss',
   imports: [],
 })
 export class GameserverActionsBoard {}

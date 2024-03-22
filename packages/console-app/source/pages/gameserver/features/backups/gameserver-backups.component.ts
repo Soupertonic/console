@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   standalone: true,
   selector: 'console-gameserver-backups',
   templateUrl: 'gameserver-backups.component.html',
-  styleUrl: 'gameserver-backups.component.css',
+  styleUrl: 'gameserver-backups.component.scss',
   imports: [],
 })
 export class GameserverBackups {}

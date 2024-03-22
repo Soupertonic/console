@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   standalone: true,
   selector: 'console-gameserver-terminal',
   templateUrl: 'gameserver-terminal.component.html',
-  styleUrl: 'gameserver-terminal.component.css',
+  styleUrl: 'gameserver-terminal.component.scss',
   imports: [],
 })
 export class GameserverTerminal {}

@@ -7,7 +7,7 @@ import { AppOutlet } from './components/outlet'
   standalone: true,
   selector: 'console-app',
   templateUrl: 'app.component.html',
-  styleUrl: 'app.component.css',
+  styleUrl: 'app.component.scss',
   imports: [AppMenu, AppOutlet],
 })
 export class App {}

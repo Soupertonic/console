@@ -11,7 +11,7 @@ import { GameserverVitalsBoard } from './components/vitals-board'
   standalone: true,
   selector: 'console-gameserver',
   templateUrl: 'gameserver.component.html',
-  styleUrl: 'gameserver.component.css',
+  styleUrl: 'gameserver.component.scss',
   imports: [
     GameserverActionsBoard,
     GameserverIdBoard,

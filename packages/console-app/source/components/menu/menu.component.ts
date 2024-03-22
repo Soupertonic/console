@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   standalone: true,
   selector: 'console-app-menu',
   templateUrl: 'menu.component.html',
-  styleUrl: 'menu.component.css',
+  styleUrl: 'menu.component.scss',
   imports: [],
 })
 export class AppMenu {}

@@ -7,7 +7,7 @@ import { ProgressBar } from '../progress-bar'
   standalone: true,
   selector: 'console-meter',
   templateUrl: 'meter.component.html',
-  styleUrl: 'meter.component.css',
+  styleUrl: 'meter.component.scss',
   imports: [MeterData, ProgressBar],
 })
 export class Meter {

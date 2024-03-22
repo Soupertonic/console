@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   standalone: true,
   selector: 'console-gameserver-databases',
   templateUrl: 'gameserver-databases.component.html',
-  styleUrl: 'gameserver-databases.component.css',
+  styleUrl: 'gameserver-databases.component.scss',
   imports: [],
 })
 export class GameserverDatabases {}

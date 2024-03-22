@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   standalone: true,
   selector: 'console-gameserver-statistics',
   templateUrl: 'gameserver-statistics.component.html',
-  styleUrl: 'gameserver-statistics.component.css',
+  styleUrl: 'gameserver-statistics.component.scss',
   imports: [],
 })
 export class GameserverStatistics {}

@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   standalone: true,
   selector: 'console-gameserver-logs',
   templateUrl: 'gameserver-logs.component.html',
-  styleUrl: 'gameserver-logs.component.css',
+  styleUrl: 'gameserver-logs.component.scss',
   imports: [],
 })
 export class GameserverLogs {}

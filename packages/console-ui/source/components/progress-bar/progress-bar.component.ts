@@ -4,7 +4,7 @@ import { Component, computed, input } from '@angular/core'
   standalone: true,
   selector: 'console-progress-bar',
   templateUrl: 'progress-bar.component.html',
-  styleUrl: 'progress-bar.component.css',
+  styleUrl: 'progress-bar.component.scss',
   imports: [],
 })
 export class ProgressBar {

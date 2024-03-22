@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router'
   standalone: true,
   selector: 'console-gameserver-menu-board',
   templateUrl: 'gameserver-menu-board.component.html',
-  styleUrl: 'gameserver-menu-board.component.css',
+  styleUrl: 'gameserver-menu-board.component.scss',
   imports: [RouterLink],
 })
 export class GameserverMenuBoard {}

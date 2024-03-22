@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   standalone: true,
   selector: 'console-gameserver-players',
   templateUrl: 'gameserver-players.component.html',
-  styleUrl: 'gameserver-players.component.css',
+  styleUrl: 'gameserver-players.component.scss',
   imports: [],
 })
 export class GameserverPlayers {}

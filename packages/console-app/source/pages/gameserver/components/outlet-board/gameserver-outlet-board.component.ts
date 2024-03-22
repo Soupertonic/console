@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router'
   standalone: true,
   selector: 'console-gameserver-outlet-board',
   templateUrl: 'gameserver-outlet-board.component.html',
-  styleUrl: 'gameserver-outlet-board.component.css',
+  styleUrl: 'gameserver-outlet-board.component.scss',
   imports: [RouterOutlet],
 })
 export class GameserverOutletBoard {}
