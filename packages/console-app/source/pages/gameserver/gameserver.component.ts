@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 import { RouterLink, RouterOutlet } from '@angular/router'
 
+import { GameserverIdBoard } from './components/id-board'
 import { GameserverUptimeBoard } from './components/uptime-board'
 import { GameserverVitalsBoard } from './components/vitals-board'
 
@@ -9,6 +10,12 @@ import { GameserverVitalsBoard } from './components/vitals-board'
   selector: 'console-gameserver',
   templateUrl: 'gameserver.component.html',
   styleUrl: 'gameserver.component.css',
-  imports: [RouterOutlet, RouterLink, GameserverUptimeBoard, GameserverVitalsBoard],
+  imports: [
+    RouterOutlet,
+    RouterLink,
+    GameserverIdBoard,
+    GameserverUptimeBoard,
+    GameserverVitalsBoard,
+  ],
 })
 export class Gameserver {}
