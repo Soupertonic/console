@@ -6,27 +6,6 @@
   gap: 2.5px;
 }
 
-.gameserver-selector {
-  background: purple;
-}
-
-.gameserver-presence {
-  background: green;
-}
-
-.gameserver-metrics {
-  background: palegoldenrod;
-}
-
-.gameserver-actions {
-  background: saddlebrown;
-}
-
-.gameserver-sidebar {
-  background: violet;
-}
-
-.gameserver-outlet {
+console-gameserver-outlet-board {
   grid-column: auto / span 3;
-  background: yellow;
 }
