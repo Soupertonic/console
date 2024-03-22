@@ -1,11 +1,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": {
-      "@console/app": ["./build/console-app"],
-      "@console/ui": ["./build/console-ui"]
-    },
     "outDir": "./build/out-tsc",
+    "baseUrl": "./",
+    "paths": {
+      "@console/app/*": ["./packages/console-app/source/*"],
+      "@console/ui/*": ["./packages/console-ui/source/*"]
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
