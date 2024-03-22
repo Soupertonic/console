@@ -1,4 +1,4 @@
-<?xml version="1.0"?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<?xml version="1.0" standalone="yes"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" target-language="de" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="gameserver.menu.overview" datatype="html">
@@ -70,6 +70,26 @@
         <source> I/O Usage </source>
         <target state="new">I/O-Auslastung</target>
         <note priority="1" from="description">Vitals meter displaying current I/O usage</note>
+      </trans-unit>
+      <trans-unit id="gameserver.uptime.status" datatype="html">
+        <source> Status </source>
+        <target state="new"> Status </target>
+        <note priority="1" from="description">Data displaying current server status</note>
+      </trans-unit>
+      <trans-unit id="gameserver.uptime.uptime" datatype="html">
+        <source> Uptime </source>
+        <target>Betriebszeit</target>
+        <note priority="1" from="description">Data displaying current server uptime</note>
+      </trans-unit>
+      <trans-unit id="gameserver.uptime.billing-rate" datatype="html">
+        <source> Billing </source>
+        <target>Abrechnung</target>
+        <note priority="1" from="description">Data displaying amount charged per hour the server has been up</note>
+      </trans-unit>
+      <trans-unit id="gameserver.uptime.billing-period" datatype="html">
+        <source> Billing Period </source>
+        <target>Abrechnungsperiode</target>
+        <note priority="1" from="description">Data displaying amount charged for every hour the server has been up</note>
       </trans-unit>
     </body>
   </file>
