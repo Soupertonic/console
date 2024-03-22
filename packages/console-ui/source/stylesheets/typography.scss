@@ -1,0 +1,52 @@
+@mixin font-text-strong {
+  font-size: 1.60rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-text-emphasized {
+  font-size: 1.60rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-text {
+  font-size: 1.60rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-note-strong {
+  font-size: 1.40rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-note-emphasized {
+  font-size: 1.40rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-note {
+  font-size: 1.40rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-family-text {
+  font-family: Inter;
+  font-feature-settings: "kern" 1, "calt" 1;
+}
+
+@mixin font-family-code {
+  // TODO
+}
+
+@mixin font-reset-root {
+  font-size: 62.5% !important;
+}
+
+@mixin font-reset-body {
+  font-size: 16px;
+}

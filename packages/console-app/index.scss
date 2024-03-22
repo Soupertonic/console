@@ -1,3 +1,5 @@
+@use 'typography';
+
 *,
 *::before,
 *::after {
@@ -8,10 +10,17 @@ router-outlet {
   display: none;
 }
 
+:root {
+  @include typography.font-reset-root;
+}
+
 html, body {
   min-height: 100vh;
   height: auto;
   margin: 0;
+
+  @include typography.font-reset-body;
+  @include typography.font-family-text;
 }
 
 body {

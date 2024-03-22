@@ -41,8 +41,13 @@
               }
             ],
             "styles": [
-              "packages/console-app/index.css"
+              "packages/console-app/index.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "packages/console-ui/source/stylesheets"
+              ]
+            },
             "scripts": []
           },
           "configurations": {

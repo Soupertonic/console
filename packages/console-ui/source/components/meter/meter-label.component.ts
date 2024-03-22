@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   standalone: true,
   selector: 'console-meter-label',
   templateUrl: 'meter-label.component.html',
-  styleUrl: 'meter-label.component.css',
+  styleUrl: 'meter-label.component.scss',
   imports: [],
 })
 export class MeterLabel {}
