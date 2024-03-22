@@ -2,20 +2,5 @@
 <console-gameserver-uptime-board />
 <console-gameserver-vitals-board />
 <div class="gameserver-actions">gameserver actions</div>
-<div class="gameserver-sidebar">
-  <nav>
-    <ul>
-      <li><a [routerLink]="['overview']">Überblick</a></li>
-      <li><a [routerLink]="['terminal']">Konsole</a></li>
-      <li><a [routerLink]="['plugins']">Plugins</a></li>
-      <li><a [routerLink]="['players']">Spieler</a></li>
-      <li><a [routerLink]="['actions']">Aktionen</a></li>
-      <li><a [routerLink]="['logs']">Protokoll</a></li>
-      <li><a [routerLink]="['statistics']">Statistiken</a></li>
-      <li><a [routerLink]="['files']">Dateien</a></li>
-      <li><a [routerLink]="['databases']">Datenbank</a></li>
-      <li><a [routerLink]="['backups']">Datensicherung</a></li>
-    </ul>
-  </nav>
-</div>
+<console-gameserver-menu-board />
 <div class="gameserver-outlet"><router-outlet></router-outlet></div>
