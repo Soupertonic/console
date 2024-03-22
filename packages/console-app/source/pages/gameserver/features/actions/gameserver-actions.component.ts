@@ -7,4 +7,4 @@ import { Component } from '@angular/core'
   styleUrl: 'gameserver-actions.component.css',
   imports: [],
 })
-export class GameserverActionsComponent {}
+export class GameserverActions {}

@@ -7,4 +7,4 @@ import { Component } from '@angular/core'
   styleUrl: 'gameserver-statistics.component.css',
   imports: [],
 })
-export class GameserverStatisticsComponent {}
+export class GameserverStatistics {}

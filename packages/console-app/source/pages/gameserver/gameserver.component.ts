@@ -8,4 +8,4 @@ import { RouterLink, RouterOutlet } from '@angular/router'
   styleUrl: 'gameserver.component.css',
   imports: [RouterOutlet, RouterLink],
 })
-export class GameserverComponent {}
+export class Gameserver {}

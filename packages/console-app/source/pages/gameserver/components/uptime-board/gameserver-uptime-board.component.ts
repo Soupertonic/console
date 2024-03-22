@@ -7,4 +7,4 @@ import { Component } from '@angular/core'
   styleUrl: 'gameserver-uptime-board.component.css',
   imports: [],
 })
-export class GameserverUptimeBoardComponent {}
+export class GameserverUptimeBoard {}
