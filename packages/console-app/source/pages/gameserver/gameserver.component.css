@@ -1,7 +1,7 @@
 :host {
   height: 100vh;
   display: grid;
-  grid-template-columns: 275px 1fr 1fr min-content;
+  grid-template-columns: 275px 1fr min-content min-content;
   grid-template-rows: 90px 1fr;
   background: blue;
   gap: 2.5px;
