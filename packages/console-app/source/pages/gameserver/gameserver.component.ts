@@ -1,5 +1,4 @@
 import { Component } from '@angular/core'
-import { RouterLink, RouterOutlet } from '@angular/router'
 
 import { GameserverActionsBoard } from './components/actions-board'
 import { GameserverIdBoard } from './components/id-board'
