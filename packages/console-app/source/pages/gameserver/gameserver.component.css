@@ -1,0 +1,31 @@
+:host {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr min-content;
+  grid-template-rows: 90px 1fr;
+  background: blue;
+}
+
+.gameserver-selector {
+  background: purple;
+}
+
+.gameserver-presence {
+  background: green;
+}
+
+.gameserver-metrics {
+  background: palegoldenrod;
+}
+
+.gameserver-actions {
+  background: saddlebrown;
+}
+
+.gameserver-sidebar {
+  background: violet;
+}
+
+.gameserver-outlet {
+  grid-column: auto / span 3;
+  background: yellow;
+}

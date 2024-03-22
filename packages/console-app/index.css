@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+router-outlet {
+  display: none;
+}
+
+html, body {
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+
 body {
   min-height: 100vh;
   line-height: 1.5;
