@@ -1,10 +1,26 @@
 :host {
   display: inline-block;
   overflow: clip;
-  animation-name: skeleton;
-  animation-duration: 250ms;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  position: relative;
+  background-color: #f2f2f2;
+
+  &::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      rgba(#d9d9d9, 0) 0,
+      rgba(#d9d9d9, 0.2) 20%,
+      rgba(#d9d9d9, 0.5) 60%,
+      rgba(#d9d9d9, 0)
+    );
+    animation: shimmer 1s infinite;
+    content: '';
+  }
 }
 
 :host(.small) {
@@ -25,12 +41,8 @@
   border-radius: 0.75rem;
 }
 
-@keyframes skeleton {
-  from {
-    background: #f2f2f2;
-  }
-
-  to {
-    background: #d9d9d9;
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
   }
 }
