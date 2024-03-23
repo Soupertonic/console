@@ -36,8 +36,13 @@
               {
                 "glob": "**/*",
                 "input": "packages/console-app/assets",
-                "output": "build/console-app/static",
+                "output": "assets/",
                 "ignore": ["locales"]
+              },
+              {
+                "glob": "**/*",
+                "input": "packages/console-ui/assets",
+                "output": "assets/"
               }
             ],
             "styles": [
