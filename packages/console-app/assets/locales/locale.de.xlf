@@ -5,10 +5,6 @@
         <source> Overview </source>
         <target state="new">Überblick</target>
       </trans-unit>
-      <trans-unit id="gameserver.menu.console" datatype="html">
-        <source> Console </source>
-        <target state="new">Konsole</target>
-      </trans-unit>
       <trans-unit id="gameserver.menu.plugins" datatype="html">
         <source> Plugins </source>
         <target state="new"> Plugins </target>
@@ -72,6 +68,10 @@
       <trans-unit id="gameserver.uptime.billing-period" datatype="html">
         <source> Billing Period </source>
         <target>Abrechnungsperiode</target>
+      </trans-unit>
+      <trans-unit id="gameserver.menu.terminal" datatype="html">
+        <source> Terminal </source>
+        <target state="new"> Konsole </target>
       </trans-unit>
     </body>
   </file>
