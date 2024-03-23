@@ -1,10 +1,10 @@
-import { Component, computed, input, signal } from '@angular/core'
+import { Component, computed, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'console-avatar',
-  templateUrl: 'avatar.component.html',
-  styleUrl: 'avatar.component.scss',
+  selector: 'console-avatar-skeleton',
+  templateUrl: 'avatar-skeleton.component.html',
+  styleUrl: 'avatar-skeleton.component.scss',
   imports: [],
   host: {
     '[class.small]': 'useSmallSize()',
@@ -12,18 +12,10 @@ import { Component, computed, input, signal } from '@angular/core'
     '[class.big]': 'useBigSize()',
   }
 })
-export class Avatar {
-  public src = input.required<string>()
-  public alt = input.required<string>()
+export class AvatarSkeleton {
   public size = input.required<'small' | 'regular' | 'big'>()
 
   protected useSmallSize = computed(() => this.size() == 'small')
   protected useRegularSize = computed(() => this.size() == 'regular')
   protected useBigSize = computed(() => this.size() == 'big')
-
-  protected loading = signal(true)
-
-  protected done(): void {
-   this.loading.set(false)
-  }
 }

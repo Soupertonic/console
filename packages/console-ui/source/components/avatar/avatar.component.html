@@ -1,1 +1,2 @@
-<img [src]="src()" [alt]="alt()" />
+<ng-content select="console-avatar-skeleton"></ng-content>
+<img [src]="src()" [alt]="alt()" (load)="done()" (error)="done()" />
