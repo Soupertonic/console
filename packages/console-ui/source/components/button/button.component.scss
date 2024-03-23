@@ -1,0 +1,130 @@
+@use 'typography';
+
+:host {
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  transition: all 250ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+  &:hover {
+    transform: scale(1.050);
+  }
+
+  &:active {
+    transform: scale(0.950);
+  }
+}
+
+:host(.small) {
+  height: 30px;
+  padding: 0px 10px;
+  border-radius: 0.50rem;
+
+  @include typography.font-note-emphasized;
+}
+
+:host(.regular) {
+  height: 40px;
+  padding: 0px 15px;
+  border-radius: 0.75rem;
+
+  @include typography.font-text-emphasized;
+}
+
+:host(.fluid) {
+  display: flex;
+}
+
+:host(.packed) {
+  display: inline-flex;
+}
+
+:host(.start) {
+  justify-content: start;
+}
+
+:host(.center) {
+  justify-content: center;
+}
+
+:host(.end) {
+  justify-content: end;
+}
+
+:host(.primary) {
+  background: #000000;
+  color: #ffffff;
+
+  &:hover {
+    background: #303030;
+  }
+
+  &:active {
+    background: #404040;
+  }
+}
+
+:host(.secondary) {
+  background: #f2f2f2;
+  color: #000000;
+
+  &:hover {
+    background: #e6e6e6;
+  }
+
+  &:active {
+    background: #d9d9d9;
+  }
+}
+
+:host(.control) {
+  background: #ffffff;
+  color: #000000;
+
+  &:hover {
+    background: #f2f2f2;
+  }
+
+  &:active {
+    background: #e6e6e6;
+  }
+}
+
+:host(.safe) {
+  background: #00b23d;
+  color: #ffffff;
+
+  &:hover {
+    background: #00cc45;
+  }
+
+  &:active {
+    background: #009934;
+  }
+}
+
+:host(.risky) {
+  background: #cc7a00;
+  color: #ffffff;
+
+  &:hover {
+    background: #e58a00;
+  }
+
+  &:active {
+    background: #b26b00;
+  }
+}
+
+:host(.dangerous) {
+  background: #cc0000;
+  color: #ffffff;
+
+  &:hover {
+    background: #e50000;
+  }
+
+  &:active {
+    background: #b20000;
+  }
+}
