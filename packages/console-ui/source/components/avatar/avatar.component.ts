@@ -10,6 +10,7 @@ import { Component, computed, input, signal } from '@angular/core'
     '[class.small]': 'useSmallSize()',
     '[class.regular]': 'useRegularSize()',
     '[class.big]': 'useBigSize()',
+    '[class.skeleton]': 'loading()',
   }
 })
 export class Avatar {
@@ -23,7 +24,7 @@ export class Avatar {
 
   protected loading = signal(true)
 
-  protected done(): void {
+  protected loaded(): void {
    this.loading.set(false)
   }
 }

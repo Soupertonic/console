@@ -1,3 +1,5 @@
+@use 'skeleton';
+
 :host {
   display: inline-grid;
   overflow: clip;
@@ -21,6 +23,10 @@
   border-radius: 0.75rem;
 }
 
+:host(.skeleton) {
+  @include skeleton.shimmer;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -29,8 +35,6 @@ img {
   grid-row: 1;
 }
 
-console-avatar-skeleton {
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 999;
+:host(.skeleton) > img {
+  visibility: hidden;
 }
