@@ -1,36 +1,42 @@
 @mixin font-text-strong {
   font-size: 1.60rem;
   font-weight: 600;
+  line-height: 2.20rem;
   letter-spacing: -0.015em;
 }
 
 @mixin font-text-emphasized {
   font-size: 1.60rem;
   font-weight: 500;
+  line-height: 2.20rem;
   letter-spacing: -0.015em;
 }
 
 @mixin font-text {
   font-size: 1.60rem;
   font-weight: 400;
+  line-height: 2.20rem;
   letter-spacing: -0.015em;
 }
 
 @mixin font-note-strong {
   font-size: 1.40rem;
   font-weight: 600;
+  line-height: 2.00rem;
   letter-spacing: -0.015em;
 }
 
 @mixin font-note-emphasized {
   font-size: 1.40rem;
   font-weight: 500;
+  line-height: 2.00rem;
   letter-spacing: -0.015em;
 }
 
 @mixin font-note {
   font-size: 1.40rem;
   font-weight: 400;
+  line-height: 2.00rem;
   letter-spacing: -0.015em;
 }
 
