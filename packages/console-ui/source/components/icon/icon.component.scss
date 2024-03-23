@@ -1,0 +1,24 @@
+:host {
+  display: inline-block;
+}
+
+:host(.small) {
+  width: 15px;
+  height: 15px;
+}
+
+:host(.regular) {
+  width: 20px;
+  height: 20px;
+}
+
+:host(.big) {
+  width: 25px;
+  height: 25px;
+  border-radius: 0.75rem;
+}
+
+svg {
+  display: inline-block;
+  all: inherit;
+}
