@@ -1,87 +1,97 @@
-<console-button (click)="navigateRoute('overview')"
-                [action]="isActiveRoute('overview') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('overview')"
+  [action]="isActiveRoute('overview') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="eye" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.overview">
     Overview
   </console-button-label>
 </console-button>
 
-<console-button (click)="navigateRoute('terminal')"
-                [action]="isActiveRoute('terminal') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('terminal')"
+  [action]="isActiveRoute('terminal') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="terminal" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.terminal">
     Terminal
   </console-button-label>
 </console-button>
 
-<console-button (click)="navigateRoute('plugins')"
-                [action]="isActiveRoute('plugins') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('plugins')"
+  [action]="isActiveRoute('plugins') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="boxes" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.plugins">
     Plugins
   </console-button-label>
 </console-button>
 
-<console-button (click)="navigateRoute('players')"
-                [action]="isActiveRoute('players') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('players')"
+  [action]="isActiveRoute('players') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="people" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.players">
     Players
   </console-button-label>
 </console-button>
 
-<console-button (click)="navigateRoute('actions')"
-                [action]="isActiveRoute('actions') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('actions')"
+  [action]="isActiveRoute('actions') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="lightning" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.actions">
     Actions
   </console-button-label>
 </console-button>
 
-<console-button (click)="navigateRoute('logs')"
-                [action]="isActiveRoute('logs') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('logs')"
+  [action]="isActiveRoute('logs') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="journal-text" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.logs">
     Logs
   </console-button-label>
 </console-button>
 
-<console-button (click)="navigateRoute('statistics')"
-                [action]="isActiveRoute('statistics') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('statistics')"
+  [action]="isActiveRoute('statistics') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="graph-up" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.statistics">
     Statistics
   </console-button-label>
 </console-button>
 
-<console-button (click)="navigateRoute('files')"
-                [action]="isActiveRoute('files') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('files')"
+  [action]="isActiveRoute('files') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="folder" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.files">
     Files
   </console-button-label>
 </console-button>
 
-<console-button (click)="navigateRoute('databases')"
-                [action]="isActiveRoute('databases') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('databases')"
+  [action]="isActiveRoute('databases') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="database" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.databases">
     Databases
   </console-button-label>
 </console-button>
 
-<console-button (click)="navigateRoute('backups')"
-                [action]="isActiveRoute('backups') ? 'secondary' : 'control'"
-                mode="fluid" size="regular" alignment="start">
+<console-button
+  (click)="navigateRoute('backups')"
+  [action]="isActiveRoute('backups') ? 'secondary' : 'control'"
+  mode="fluid" size="regular" alignment="start">
   <console-button-icon identifier="hdd-rack" size="regular" slot="start" />
   <console-button-label i18n="@@gameserver.menu.backups">
     Backups
