@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { Avatar } from '@console/ui/components/avatar'
+import { Avatar, AvatarSkeleton } from '@console/ui/components/avatar'
 import { Data, DataLabel, DataValue } from '@console/ui/components/data'
 
 @Component({
@@ -7,6 +7,6 @@ import { Data, DataLabel, DataValue } from '@console/ui/components/data'
   selector: 'console-gameserver-id-board',
   templateUrl: 'gameserver-id-board.component.html',
   styleUrl: 'gameserver-id-board.component.scss',
-  imports: [Avatar, Data, DataLabel, DataValue],
+  imports: [Avatar, AvatarSkeleton, Data, DataLabel, DataValue],
 })
 export class GameserverIdBoard {}
