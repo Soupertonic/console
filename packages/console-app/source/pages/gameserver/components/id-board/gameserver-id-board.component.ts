@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
-import { Avatar } from '@console/ui/components/avatar';
-import { Data, DataLabel, DataValue } from '@console/ui/components/data';
+import { Avatar } from '@console/ui/components/avatar'
+import { Data, DataLabel, DataValue } from '@console/ui/components/data'
 
 @Component({
   standalone: true,
