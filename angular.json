@@ -29,7 +29,12 @@
             "polyfills": ["zone.js"],
             "assets": [
               {
-                "glob": "index.ico",
+                "glob": "favicon.png",
+                "input": "packages/console-app",
+                "output": ""
+              },
+              {
+                "glob": "favicon.svg",
                 "input": "packages/console-app",
                 "output": ""
               },
