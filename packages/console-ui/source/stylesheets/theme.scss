@@ -5,3 +5,7 @@
 @mixin dark {
   --logo-color: #ffffff;
 }
+
+@mixin transition {
+  transition: color 150ms;
+}
