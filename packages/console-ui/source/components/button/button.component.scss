@@ -13,6 +13,16 @@
   &:active {
     transform: scale(0.950);
   }
+
+  &:not(:has(console-button-label)) {
+    &:hover {
+      transform: scale(1.100);
+    }
+
+    &:active {
+      transform: scale(1.000);
+    }
+  }
 }
 
 :host(.small) {
