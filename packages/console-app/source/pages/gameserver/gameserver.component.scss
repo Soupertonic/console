@@ -1,12 +1,14 @@
 :host {
   height: 100vh;
-  display: grid;
-  grid-template-columns: 275px 1fr min-content min-content;
-  grid-template-rows: 90px 1fr;
-  background: #F2F2F2;
+  display: flex;
   gap: 1.25px;
+  background: #F2F2F2;
+}
+
+console-gameserver-sidebar {
+  flex-basis: 275px;
 }
 
 console-gameserver-outlet {
-  grid-column: auto / span 3;
+  flex: 1;
 }
