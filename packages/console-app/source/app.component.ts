@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
-import { AppMenu } from './components/menu'
-import { AppOutlet } from './components/outlet'
+import { AppMenu } from './components/app-menu'
+import { AppOutlet } from './components/app-outlet'
 
 @Component({
   standalone: true,

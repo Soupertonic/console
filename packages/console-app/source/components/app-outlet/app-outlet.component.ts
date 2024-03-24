@@ -4,8 +4,8 @@ import { RouterOutlet } from '@angular/router'
 @Component({
   standalone: true,
   selector: 'console-app-outlet',
-  templateUrl: 'outlet.component.html',
-  styleUrl: 'outlet.component.scss',
+  templateUrl: 'app-outlet.component.html',
+  styleUrl: 'app-outlet.component.scss',
   imports: [RouterOutlet],
 })
 export class AppOutlet {}
