@@ -11,7 +11,7 @@
       </trans-unit>
       <trans-unit id="gameserver.menu.players" datatype="html">
         <source> Players </source>
-        <target state="new">Players</target>
+        <target state="new">Spieler</target>
       </trans-unit>
       <trans-unit id="gameserver.menu.actions" datatype="html">
         <source> Actions </source>
@@ -70,6 +70,46 @@
         <target>Abrechnungsperiode</target>
       </trans-unit>
       <trans-unit id="gameserver.menu.terminal" datatype="html">
+        <source> Terminal </source>
+        <target state="new"> Konsole </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.actions" datatype="html">
+        <source> Actions </source>
+        <target state="new"> Aktionen </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.backups" datatype="html">
+        <source> Backups </source>
+        <target state="new"> Datensicherungen </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.databases" datatype="html">
+        <source> Databases </source>
+        <target state="new"> Datenbanken </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.files" datatype="html">
+        <source> Files </source>
+        <target state="new"> Dateien </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.logs" datatype="html">
+        <source> Logs </source>
+        <target state="new"> Protokoll </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.overview" datatype="html">
+        <source> Overview </source>
+        <target state="new"> Überblick </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.players" datatype="html">
+        <source> Players </source>
+        <target state="new"> Spieler </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.plugins" datatype="html">
+        <source> Plugins </source>
+        <target state="new"> Plugins </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.statistics" datatype="html">
+        <source> Statistics </source>
+        <target state="new"> Statistiken </target>
+      </trans-unit>
+      <trans-unit id="gameserver.title.terminal" datatype="html">
         <source> Terminal </source>
         <target state="new"> Konsole </target>
       </trans-unit>
