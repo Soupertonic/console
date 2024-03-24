@@ -1,3 +1,4 @@
+@use 'theme';
 @use 'typography';
 
 *,
@@ -45,10 +46,11 @@ html, body {
 }
 
 body[theme="light"] {
-
+  @include theme.light;
 }
 
 body[theme="dark"] {
+  @include theme.dark;
 }
 
 router-outlet {
