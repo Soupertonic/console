@@ -9,6 +9,7 @@ import { Component, computed, input } from "@angular/core"
   host: {
     '[class.small]': 'useSmallSize()',
     '[class.regular]': 'useRegularSize()',
+    '[class.big]': 'useBigSize()',
     '[class.fluid]': 'useFluidMode()',
     '[class.packed]': 'usePackedMode()',
     '[class.start]': 'useStartAlignment()',
@@ -23,13 +24,14 @@ import { Component, computed, input } from "@angular/core"
   }
 })
 export class Button {
-  public size = input.required<'small' | 'regular'>()
+  public size = input.required<'small' | 'regular' | 'big'>()
   public mode = input.required<'fluid' | 'packed'>()
   public alignment = input.required<'start' | 'center' | 'end'>()
   public action = input.required<'primary' | 'secondary' | 'control' | 'safe' | 'risky' | 'dangerous'>()
 
   protected useSmallSize = computed(() => this.size() == 'small')
   protected useRegularSize = computed(() => this.size() == 'regular')
+  protected useBigSize = computed(() => this.size() == 'big')
 
   protected useFluidMode = computed(() => this.mode() == 'fluid')
   protected usePackedMode = computed(() => this.mode() == 'packed')

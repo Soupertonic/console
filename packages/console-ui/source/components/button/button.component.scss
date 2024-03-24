@@ -33,6 +33,15 @@
   @include typography.font-text-emphasized;
 }
 
+:host(.big) {
+  height: 50px;
+  min-height: 50px;
+  padding: 0 15px;
+  border-radius: 1.00rem;
+
+  @include typography.font-text-emphasized;
+}
+
 :host(.fluid) {
   display: flex;
 }
