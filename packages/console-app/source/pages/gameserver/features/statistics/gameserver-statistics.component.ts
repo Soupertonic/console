@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
-import { Title } from '@console/ui/components/title';
-import { TitleSegment } from '@console/ui/components/title-segment';
+import { Title } from '@console/ui/components/title'
+import { TitleSegment } from '@console/ui/components/title-segment'
 
 @Component({
   standalone: true,

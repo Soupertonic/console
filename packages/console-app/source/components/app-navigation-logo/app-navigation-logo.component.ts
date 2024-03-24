@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 
-import { Logo } from '@console/ui/components/logo';
+import { Logo } from '@console/ui/components/logo'
 
 @Component({
   standalone: true,

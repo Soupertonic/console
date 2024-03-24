@@ -1,9 +1,9 @@
 import { Component } from '@angular/core'
 
-import { Avatar } from '@console/ui/components/avatar';
-import { AvatarMark } from '@console/ui/components/avatar-mark';
-import { Button } from '@console/ui/components/button';
-import { ButtonIcon } from '@console/ui/components/button-icon';
+import { Avatar } from '@console/ui/components/avatar'
+import { AvatarMark } from '@console/ui/components/avatar-mark'
+import { Button } from '@console/ui/components/button'
+import { ButtonIcon } from '@console/ui/components/button-icon'
 
 @Component({
   standalone: true,

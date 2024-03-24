@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject } from '@angular/core'
+import { Component, inject } from '@angular/core'
 import { Title as PageTitle } from '@angular/platform-browser'
 
 @Component({

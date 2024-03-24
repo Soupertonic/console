@@ -1,4 +1,5 @@
 import { Route } from '@angular/router'
+
 import { Gameserver } from './gameserver.component'
 
 export default [

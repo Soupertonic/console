@@ -1,8 +1,8 @@
 import { Component } from '@angular/core'
 
-import { AppNavigationLogo } from '../app-navigation-logo';
-import { AppNavigationMenu } from '../app-navigation-menu';
-import { AppNavigationAvatar } from '../app-navigation-user';
+import { AppNavigationLogo } from '../app-navigation-logo'
+import { AppNavigationMenu } from '../app-navigation-menu'
+import { AppNavigationAvatar } from '../app-navigation-user'
 
 @Component({
   standalone: true,
