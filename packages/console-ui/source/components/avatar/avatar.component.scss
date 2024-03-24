@@ -2,6 +2,7 @@
 
 :host {
   overflow: clip;
+  position: relative;
 }
 
 :host(.small) {
@@ -10,16 +11,88 @@
   border-radius: 0.25rem;
 }
 
+:host(.small):has(console-avatar-mark)::before {
+  content: '';
+  position: absolute;
+  top: -2.5px;
+  right: -2.5px;
+  width: 10.50px;
+  height: 10.50px;
+  border-radius: 10.50px;
+  background: #ffffff;
+}
+
+:host(.small):has(console-avatar-mark)::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 5.50px;
+  height: 5.50px;
+  border-radius: 5.50px;
+  background: #f75050;
+}
+
 :host(.regular) {
   width: 40px;
   height: 40px;
   border-radius: 0.50rem;
 }
 
+:host(.regular):has(console-avatar-mark)::before {
+  content: '';
+  position: absolute;
+  top: -2.5px;
+  right: -2.5px;
+  width: 12.75px;
+  height: 12.75px;
+  border-radius: 12.75px;
+  background: #ffffff;
+}
+
+:host(.regular):has(console-avatar-mark)::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 7.75px;
+  height: 7.75px;
+  border-radius: 7.75px;
+  background: #f75050;
+}
+
 :host(.big) {
   width: 55px;
   height: 55px;
   border-radius: 0.75rem;
+}
+
+:host(.big):has(console-avatar-mark)::before {
+  content: '';
+  position: absolute;
+  top: -2.5px;
+  right: -2.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+:host(.big):has(console-avatar-mark)::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #f75050;
+}
+
+:host(.small):has(console-avatar-mark),
+:host(.regular):has(console-avatar-mark),
+:host(.big):has(console-avatar-mark) {
+  border-top-right-radius: 0.00rem;
 }
 
 :host(.skeleton) {
