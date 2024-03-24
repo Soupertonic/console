@@ -1,0 +1,21 @@
+:host {
+  display: inline-block;
+  overflow: clip;
+}
+
+:host(.small) {
+  width: 12.5px;
+}
+
+:host(.regular) {
+  width: 25px;
+}
+
+:host(.big) {
+  height: 37.5px;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
