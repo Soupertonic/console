@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 
 import { GameserverActionsBoard } from './components/actions-board'
 import { GameserverIdBoard } from './components/id-board'
-import { GameserverMenuBoard } from './components/menu-board'
+import { GameserverNavigationBoard } from './components/navigation-board'
 import { GameserverOutletBoard } from './components/outlet-board'
 import { GameserverUptimeBoard } from './components/uptime-board'
 import { GameserverVitalsBoard } from './components/vitals-board'
@@ -15,7 +15,7 @@ import { GameserverVitalsBoard } from './components/vitals-board'
   imports: [
     GameserverActionsBoard,
     GameserverIdBoard,
-    GameserverMenuBoard,
+    GameserverNavigationBoard,
     GameserverOutletBoard,
     GameserverUptimeBoard,
     GameserverVitalsBoard,

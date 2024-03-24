@@ -7,12 +7,12 @@ import { ButtonLabel } from '@console/ui/components/button-label'
 
 @Component({
   standalone: true,
-  selector: 'console-gameserver-menu-board',
-  templateUrl: 'gameserver-menu-board.component.html',
-  styleUrl: 'gameserver-menu-board.component.scss',
+  selector: 'console-gameserver-navigation-board',
+  templateUrl: 'gameserver-navigation-board.component.html',
+  styleUrl: 'gameserver-navigation-board.component.scss',
   imports: [RouterLink, Button, ButtonIcon, ButtonLabel],
 })
-export class GameserverMenuBoard {
+export class GameserverNavigationBoard {
   private _router = inject(Router)
   private _activatedRoute = inject(ActivatedRoute)
 
