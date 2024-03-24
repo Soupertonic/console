@@ -1,0 +1,48 @@
+<console-button
+  (click)="navigateRoute('dashboard')"
+  [action]="isActiveRoute('dashboard') ? 'secondary' : 'control'"
+  mode="packed" size="big" alignment="start">
+  <console-button-icon identifier="grid-1x2" size="regular" slot="start" />
+</console-button>
+
+<console-button
+  (click)="navigateRoute('gameserver')"
+  [action]="isActiveRoute('gameserver') ? 'secondary' : 'control'"
+  mode="packed" size="big" alignment="start">
+  <console-button-icon identifier="controller" size="regular" slot="start" />
+</console-button>
+
+<console-button
+  (click)="navigateRoute('voiceserver')"
+  [action]="isActiveRoute('voiceserver') ? 'secondary' : 'control'"
+  mode="packed" size="big" alignment="start">
+  <console-button-icon identifier="mic" size="regular" slot="start" />
+</console-button>
+
+<console-button
+  (click)="navigateRoute('vps')"
+  [action]="isActiveRoute('vps') ? 'secondary' : 'control'"
+  mode="packed" size="big" alignment="start">
+  <console-button-icon identifier="cpu" size="regular" slot="start" />
+</console-button>
+
+<console-button
+  (click)="navigateRoute('storage')"
+  [action]="isActiveRoute('storage') ? 'secondary' : 'control'"
+  mode="packed" size="big" alignment="start">
+  <console-button-icon identifier="device-hdd" size="regular" slot="start" />
+</console-button>
+
+<console-button
+  (click)="navigateRoute('domain')"
+  [action]="isActiveRoute('domain') ? 'secondary' : 'control'"
+  mode="packed" size="big" alignment="start">
+  <console-button-icon identifier="globe" size="regular" slot="start" />
+</console-button>
+
+<console-button
+  (click)="navigateRoute('webserver')"
+  [action]="isActiveRoute('webserver') ? 'secondary' : 'control'"
+  mode="packed" size="big" alignment="start">
+  <console-button-icon identifier="hdd-network" size="regular" slot="start" />
+</console-button>
