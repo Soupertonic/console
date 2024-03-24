@@ -16,8 +16,9 @@
 }
 
 :host(.small) {
-  height: 30px;
-  padding: 10px;
+  min-height: 30px;
+  max-height: 30px;
+  padding: 0 10px;
   border-radius: 0.50rem;
 
   @include typography.font-note-emphasized;
@@ -25,7 +26,8 @@
 
 :host(.regular) {
   height: 40px;
-  padding: 15px;
+  min-height: 40px;
+  padding: 0 15px;
   border-radius: 0.75rem;
 
   @include typography.font-text-emphasized;
