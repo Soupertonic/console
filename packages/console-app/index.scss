@@ -6,27 +6,44 @@
   box-sizing: border-box;
 }
 
-router-outlet {
-  display: none;
-}
-
 :root {
   @include typography.font-reset-root;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #d9d9d9 transparent;
+    scrollbar-width: thin;
+  }
+}
+
 html, body {
   min-height: 100vh;
+  line-height: 1.5;
   height: auto;
   margin: 0;
+
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   @include typography.font-reset-body;
   @include typography.font-family-text;
 }
 
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-  text-rendering: optimizeSpeed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+router-outlet {
+  display: none;
 }
