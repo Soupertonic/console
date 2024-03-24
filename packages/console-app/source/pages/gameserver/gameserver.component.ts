@@ -1,11 +1,11 @@
 import { Component } from '@angular/core'
 
-import { GameserverActionsBoard } from './components/actions-board'
-import { GameserverIdBoard } from './components/id-board'
-import { GameserverNavigationBoard } from './components/navigation-board'
-import { GameserverOutletBoard } from './components/outlet-board'
-import { GameserverUptimeBoard } from './components/uptime-board'
-import { GameserverVitalsBoard } from './components/vitals-board'
+import { GameserverActions } from './components/actions'
+import { GameserverId } from './components/id'
+import { GameserverNavigation } from './components/navigation'
+import { GameserverOutlet } from './components/outlet'
+import { GameserverUptime } from './components/uptime'
+import { GameserverVitals } from './components/vitals'
 
 @Component({
   standalone: true,
@@ -13,12 +13,12 @@ import { GameserverVitalsBoard } from './components/vitals-board'
   templateUrl: 'gameserver.component.html',
   styleUrl: 'gameserver.component.scss',
   imports: [
-    GameserverActionsBoard,
-    GameserverIdBoard,
-    GameserverNavigationBoard,
-    GameserverOutletBoard,
-    GameserverUptimeBoard,
-    GameserverVitalsBoard,
+    GameserverActions,
+    GameserverId,
+    GameserverNavigation,
+    GameserverOutlet,
+    GameserverUptime,
+    GameserverVitals,
   ],
 })
 export class Gameserver {}

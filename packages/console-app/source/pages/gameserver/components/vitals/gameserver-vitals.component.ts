@@ -5,9 +5,9 @@ import { MeterValue } from '@console/ui/components/meter-value'
 
 @Component({
   standalone: true,
-  selector: 'console-gameserver-vitals-board',
-  templateUrl: 'gameserver-vitals-board.component.html',
-  styleUrl: 'gameserver-vitals-board.component.scss',
+  selector: 'console-gameserver-vitals',
+  templateUrl: 'gameserver-vitals.component.html',
+  styleUrl: 'gameserver-vitals.component.scss',
   imports: [Meter, MeterLabel, MeterValue],
 })
-export class GameserverVitalsBoard {}
+export class GameserverVitals {}

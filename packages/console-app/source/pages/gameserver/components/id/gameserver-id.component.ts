@@ -6,9 +6,9 @@ import { DataValue } from '@console/ui/components/data-value'
 
 @Component({
   standalone: true,
-  selector: 'console-gameserver-id-board',
-  templateUrl: 'gameserver-id-board.component.html',
-  styleUrl: 'gameserver-id-board.component.scss',
+  selector: 'console-gameserver-id',
+  templateUrl: 'gameserver-id.component.html',
+  styleUrl: 'gameserver-id.component.scss',
   imports: [Avatar, Data, DataLabel, DataValue],
 })
-export class GameserverIdBoard {}
+export class GameserverId {}

@@ -6,9 +6,9 @@ import { DataValue } from '@console/ui/components/data-value';
 
 @Component({
   standalone: true,
-  selector: 'console-gameserver-uptime-board',
-  templateUrl: 'gameserver-uptime-board.component.html',
-  styleUrl: 'gameserver-uptime-board.component.scss',
+  selector: 'console-gameserver-uptime',
+  templateUrl: 'gameserver-uptime.component.html',
+  styleUrl: 'gameserver-uptime.component.scss',
   imports: [Data, DataLabel, DataValue, CurrencyPipe],
 })
-export class GameserverUptimeBoard {}
+export class GameserverUptime {}
