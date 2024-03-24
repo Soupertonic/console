@@ -1,3 +1,11 @@
+<console-button (click)="theme.toggle()" action="control" mode="packed" size="big" alignment="start">
+  @if (theme.isLight()) {
+    <console-button-icon identifier="moon-stars" size="regular" slot="start" />
+  } @else {
+    <console-button-icon identifier="sun" size="regular" slot="start" />
+  }
+</console-button>
+
 <console-button action="control" mode="packed" size="big" alignment="start">
   <console-button-icon identifier="person-raised-hand" size="regular" slot="start" />
 </console-button>

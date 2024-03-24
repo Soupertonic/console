@@ -44,6 +44,13 @@ html, body {
   @include typography.font-family-text;
 }
 
+body[theme="light"] {
+
+}
+
+body[theme="dark"] {
+}
+
 router-outlet {
   display: none;
 }
