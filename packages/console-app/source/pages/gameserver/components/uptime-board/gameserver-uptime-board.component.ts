@@ -1,6 +1,8 @@
 import { CurrencyPipe } from '@angular/common';
 import { Component } from '@angular/core'
-import { Data, DataLabel, DataValue } from '@console/ui/components/data';
+import { Data } from '@console/ui/components/data';
+import { DataLabel } from '@console/ui/components/data-label';
+import { DataValue } from '@console/ui/components/data-value';
 
 @Component({
   standalone: true,

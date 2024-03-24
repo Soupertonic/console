@@ -1,5 +1,7 @@
 import { Component } from '@angular/core'
-import { Meter, MeterLabel, MeterValue } from '@console/ui/components/meter'
+import { Meter } from '@console/ui/components/meter'
+import { MeterLabel } from '@console/ui/components/meter-label'
+import { MeterValue } from '@console/ui/components/meter-value'
 
 @Component({
   standalone: true,

@@ -1,6 +1,8 @@
 import { Component, inject } from '@angular/core'
 import { ActivatedRoute, Router, RouterLink } from '@angular/router'
-import { Button, ButtonIcon, ButtonLabel } from '@console/ui/components/button'
+import { Button } from '@console/ui/components/button'
+import { ButtonIcon } from '@console/ui/components/button-icon'
+import { ButtonLabel } from '@console/ui/components/button-label'
 
 @Component({
   standalone: true,
