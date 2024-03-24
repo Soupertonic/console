@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
-import { GameserverNavigation } from '../navigation'
-import { GameserverId } from '../id'
+import { GameserverNavigation } from '../gameserver-navigation'
+import { GameserverId } from '../gameserver-id'
 
 @Component({
   standalone: true,

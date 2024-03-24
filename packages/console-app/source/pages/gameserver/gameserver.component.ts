@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
-import { GameserverSidebar } from './components/sidebar'
-import { GameserverOutlet } from './components/outlet'
+import { GameserverSidebar } from './components/gameserver-sidebar'
+import { GameserverOutlet } from './components/gameserver-outlet'
 
 @Component({
   standalone: true,
