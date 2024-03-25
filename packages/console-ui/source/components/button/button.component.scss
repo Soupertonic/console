@@ -29,7 +29,7 @@
   min-height: 30px;
   max-height: 30px;
   padding: 0 10px;
-  border-radius: 0.50rem;
+  border-radius: 0.75rem;
 
   @include typography.font-note-emphasized;
 }
@@ -38,7 +38,7 @@
   height: 40px;
   min-height: 40px;
   padding: 0 15px;
-  border-radius: 0.75rem;
+  border-radius: 1.00rem;
 
   @include typography.font-text-emphasized;
 }
@@ -47,7 +47,7 @@
   height: 50px;
   min-height: 50px;
   padding: 0 15px;
-  border-radius: 1.00rem;
+  border-radius: 1.25rem;
 
   @include typography.font-text-emphasized;
 }
