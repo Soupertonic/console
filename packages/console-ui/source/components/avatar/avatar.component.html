@@ -1,2 +1,2 @@
-<img [src]="src()" [alt]="alt()" loading="lazy" (load)="loaded()" (error)="loaded()" />
+<console-image [src]="src()" [alt]="alt()" (load)="loaded()" (error)="loaded()" strategy="lazy" />
 <ng-content select="console-avatar-mark"></ng-content>

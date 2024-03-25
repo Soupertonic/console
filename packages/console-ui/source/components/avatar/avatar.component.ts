@@ -1,11 +1,13 @@
 import { Component, computed, input, signal } from '@angular/core'
 
+import { Image } from '../image'
+
 @Component({
   standalone: true,
   selector: 'console-avatar',
   templateUrl: 'avatar.component.html',
   styleUrl: 'avatar.component.scss',
-  imports: [],
+  imports: [Image],
   host: {
     '[class.small]': 'useSmallSize()',
     '[class.regular]': 'useRegularSize()',

@@ -1,5 +1,3 @@
-@use 'skeleton';
-
 :host {
   overflow: clip;
   position: relative;
@@ -74,6 +72,7 @@
   height: 10.50px;
   border-radius: 10.50px;
   background: var(--avatar-background-cutout);
+  z-index: 1;
 }
 
 :host(.small):not(.skeleton):has(console-avatar-mark)::after {
@@ -85,6 +84,7 @@
   height: 5.50px;
   border-radius: 5.50px;
   background: var(--mark-color);
+  z-index: 2;
 }
 
 :host(.regular) {
@@ -102,6 +102,7 @@
   height: 12.75px;
   border-radius: 12.75px;
   background: var(--avatar-background-cutout);
+  z-index: 1;
 }
 
 :host(.regular):not(.skeleton):has(console-avatar-mark)::after {
@@ -113,6 +114,7 @@
   height: 7.75px;
   border-radius: 7.75px;
   background: var(--mark-color);
+  z-index: 2;
 }
 
 :host(.big) {
@@ -130,6 +132,7 @@
   height: 15px;
   border-radius: 15px;
   background: var(--avatar-background-cutout);
+  z-index: 1;
 }
 
 :host(.big):not(.skeleton):has(console-avatar-mark)::after {
@@ -141,6 +144,7 @@
   height: 10px;
   border-radius: 10px;
   background: var(--mark-color);
+  z-index: 2;
 }
 
 :host(.small):not(.skeleton):has(console-avatar-mark),
@@ -149,16 +153,7 @@
   border-top-right-radius: 0.00rem;
 }
 
-:host(.skeleton) {
-  @include skeleton.shimmer;
-}
-
-img {
+console-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-:host(.skeleton) > img {
-  visibility: hidden;
 }

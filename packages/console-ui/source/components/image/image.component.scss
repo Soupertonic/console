@@ -1,0 +1,21 @@
+@use 'skeleton';
+
+:host {
+  display: block;
+  overflow: clip;
+  position: relative;
+}
+
+:host(.skeleton) {
+  @include skeleton.shimmer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:host(.skeleton) > img {
+  visibility: hidden;
+}
