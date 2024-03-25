@@ -4,6 +4,8 @@
   display: block;
   overflow: clip;
   position: relative;
+  width: inherit;
+  height: inherit;
 }
 
 :host(.skeleton) {
