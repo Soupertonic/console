@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 
 import { Avatar } from '@console/ui/components/avatar'
+import { AvatarMark } from '@console/ui/components/avatar-mark'
 import { Data } from '@console/ui/components/data'
 import { DataLabel } from '@console/ui/components/data-label'
 import { DataValue } from '@console/ui/components/data-value'
@@ -10,6 +11,6 @@ import { DataValue } from '@console/ui/components/data-value'
   selector: 'console-gameserver-id',
   templateUrl: 'gameserver-id.component.html',
   styleUrl: 'gameserver-id.component.scss',
-  imports: [Avatar, Data, DataLabel, DataValue],
+  imports: [Avatar, AvatarMark, Data, DataLabel, DataValue],
 })
 export class GameserverId {}
