@@ -65,7 +65,7 @@
   border-radius: 0.25rem;
 }
 
-:host(.small):has(console-avatar-mark)::before {
+:host(.small):not(.skeleton):has(console-avatar-mark)::before {
   content: '';
   position: absolute;
   top: -2.5px;
@@ -76,7 +76,7 @@
   background: var(--avatar-background-cutout);
 }
 
-:host(.small):has(console-avatar-mark)::after {
+:host(.small):not(.skeleton):has(console-avatar-mark)::after {
   content: '';
   position: absolute;
   top: 0px;
@@ -93,7 +93,7 @@
   border-radius: 0.50rem;
 }
 
-:host(.regular):has(console-avatar-mark)::before {
+:host(.regular):not(.skeleton):has(console-avatar-mark)::before {
   content: '';
   position: absolute;
   top: -2.5px;
@@ -104,7 +104,7 @@
   background: var(--avatar-background-cutout);
 }
 
-:host(.regular):has(console-avatar-mark)::after {
+:host(.regular):not(.skeleton):has(console-avatar-mark)::after {
   content: '';
   position: absolute;
   top: 0px;
@@ -121,7 +121,7 @@
   border-radius: 0.75rem;
 }
 
-:host(.big):has(console-avatar-mark)::before {
+:host(.big):not(.skeleton):has(console-avatar-mark)::before {
   content: '';
   position: absolute;
   top: -2.5px;
@@ -132,7 +132,7 @@
   background: var(--avatar-background-cutout);
 }
 
-:host(.big):has(console-avatar-mark)::after {
+:host(.big):not(.skeleton):has(console-avatar-mark)::after {
   content: '';
   position: absolute;
   top: 0px;
@@ -143,9 +143,9 @@
   background: var(--mark-color);
 }
 
-:host(.small):has(console-avatar-mark),
-:host(.regular):has(console-avatar-mark),
-:host(.big):has(console-avatar-mark) {
+:host(.small):not(.skeleton):has(console-avatar-mark),
+:host(.regular):not(.skeleton):has(console-avatar-mark),
+:host(.big):not(.skeleton):has(console-avatar-mark) {
   border-top-right-radius: 0.00rem;
 }
 
