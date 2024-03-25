@@ -18,6 +18,14 @@ export class Theme {
     return this._themeIsDark
   }
 
+  constructor() {
+    if (this._preferredColorSchemeIsLight()) {
+      this.light()
+    } else {
+      this.dark()
+    }
+  }
+
   public toggle(): void {
     if (this._themeIsLight()) {
       this.dark()
@@ -34,5 +42,9 @@ export class Theme {
   public dark(): void {
     this._renderer.setAttribute(this._document.body, 'theme', 'dark')
     this._theme.set('dark')
+  }
+
+  private _preferredColorSchemeIsLight(): boolean {
+    return window.matchMedia('(prefers-color-scheme: light)').matches;
   }
 }
