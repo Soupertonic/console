@@ -1,0 +1,11 @@
+@use 'typography';
+
+:host {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0px 30px;
+  background: var(--section-background);
+
+  @include typography.font-text-emphasized;
+}
