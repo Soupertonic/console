@@ -19,7 +19,7 @@
   width: 10.50px;
   height: 10.50px;
   border-radius: 10.50px;
-  background: #ffffff;
+  background: var(--avatar-background-cutout);
 }
 
 :host(.small):has(console-avatar-mark)::after {
@@ -47,7 +47,7 @@
   width: 12.75px;
   height: 12.75px;
   border-radius: 12.75px;
-  background: #ffffff;
+  background: var(--avatar-background-cutout);
 }
 
 :host(.regular):has(console-avatar-mark)::after {
@@ -75,7 +75,7 @@
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  background: #ffffff;
+  background: var(--avatar-background-cutout);
 }
 
 :host(.big):has(console-avatar-mark)::after {
