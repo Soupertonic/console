@@ -19,6 +19,7 @@ export class Theme {
   }
 
   constructor() {
+    this._listenForColorSchemeChanges();
     if (this._preferredColorSchemeIsLight()) {
       this.light()
     } else {
@@ -42,6 +43,16 @@ export class Theme {
   public dark(): void {
     this._renderer.setAttribute(this._document.body, 'theme', 'dark')
     this._theme.set('dark')
+  }
+
+  private _listenForColorSchemeChanges(): void {
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', event => {
+        if (event.matches) {
+          this.light()
+        } else {
+          this.dark()
+        }
+    });
   }
 
   private _preferredColorSchemeIsLight(): boolean {
