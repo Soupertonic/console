@@ -37,6 +37,8 @@ html, body {
   height: auto;
   margin: 0;
 
+  color: var(--foreground);
+
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

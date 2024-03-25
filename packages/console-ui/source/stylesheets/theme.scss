@@ -1,9 +1,51 @@
 @mixin light {
-  --logo-color: #000000;
+  --foreground: #292929;
+
+  --logo-foreground: var(--foreground);
+
+  --board-foreground: var(--foreground);
+  --board-background: #ffffff;
+  --board-background-ridges: #f2f2f2;
+
+  --button-foreground-primary: #ffffff;
+  --button-background-primary: #262626;
+  --button-background-primary-hover: #333333;
+  --button-background-primary-active: #404040;
+
+  --button-foreground-secondary: var(--foreground);
+  --button-background-secondary: #f2f2f2;
+  --button-background-secondary-hover: #e6e6e6;
+  --button-background-secondary-active: #d9d9d9;
+
+  --button-foreground-control: var(--foreground);
+  --button-background-control: transparent;
+  --button-background-control-hover: #f2f2f2;
+  --button-background-control-active: #e6e6e6;
 }
 
 @mixin dark {
-  --logo-color: #ffffff;
+  --foreground: #ffffff;
+
+  --logo-foreground: var(--foreground);
+
+  --board-foreground: var(--foreground);
+  --board-background: #1b2127;
+  --board-background-ridges: #212930;
+
+  --button-foreground-primary: var(--foreground);
+  --button-background-primary: #36434f;
+  --button-background-primary-hover: #40505e;
+  --button-background-primary-active: #4b5c6d;
+
+  --button-foreground-secondary: var(--foreground);
+  --button-background-secondary: #212930;
+  --button-background-secondary-hover: #2c363f;
+  --button-background-secondary-active: #36434f;
+
+  --button-foreground-control: var(--foreground);
+  --button-background-control: transparent;
+  --button-background-control-hover: #212930;
+  --button-background-control-active: #2c363f;
 }
 
 @mixin transition {

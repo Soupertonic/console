@@ -3,9 +3,7 @@
 :host {
   display: inline-block;
   overflow: clip;
-  color: var(--logo-color);
-
-  @include theme.transition;
+  color: var(--logo-foreground);
 }
 
 :host(.small) {

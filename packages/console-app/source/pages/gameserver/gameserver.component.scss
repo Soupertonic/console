@@ -2,7 +2,7 @@
   height: 100vh;
   display: flex;
   gap: 1.25px;
-  background: #F2F2F2;
+  background: var(--board-background-ridges);
 }
 
 console-gameserver-sidebar {

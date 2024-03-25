@@ -3,6 +3,6 @@
   display: grid;
   grid-template-columns: 85px 1fr;
   grid-template-rows: 1fr;
-  background: #f2f2f2;
+  background: var(--board-background-ridges);
   gap: 1.25px;
 }

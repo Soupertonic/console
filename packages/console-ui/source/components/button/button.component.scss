@@ -73,42 +73,41 @@
 }
 
 :host(.primary) {
-  background: #000000;
-  color: #ffffff;
+  background: var(--button-background-primary);
+  color: var(--button-foreground-primary);
 
   &:hover {
-    background: #303030;
+    background: var(--button-background-primary-hover);
   }
 
   &:active {
-    background: #404040;
+    background: var(--button-background-primary-active);
   }
 }
 
 :host(.secondary) {
-  background: #f2f2f2;
-  color: #000000;
+  background: var(--button-background-secondary);
+  color: var(--button-foreground-secondary);
 
   &:hover {
-    background: #e6e6e6;
+    background: var(--button-background-secondary-hover);
   }
 
   &:active {
-    background: #d9d9d9;
+    background: var(--button-background-secondary-active);
   }
 }
 
 :host(.control) {
-  background: #ffffff;
-  color: #000000;
-  border: 1px solid transparent;
+  background: var(--button-background-control);
+  color: var(--button-foreground-control);
 
   &:hover {
-    border: 1px solid #d9d9d9;
+    background: var(--button-background-control-hover);
   }
 
   &:active {
-    background: #e6e6e6;
+    background: var(--button-background-control-active);
   }
 }
 
