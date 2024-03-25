@@ -4,7 +4,7 @@ import { Gameserver } from './gameserver.component'
 
 export default [
   {
-    path: ':id',
+    path: '',
     component: Gameserver,
     children: [
       {
