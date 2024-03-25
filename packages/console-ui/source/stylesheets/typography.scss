@@ -1,3 +1,66 @@
+@mixin font-header-1 {
+  font-size: 3.40rem;
+  font-weight: 600;
+  line-height: 2.10rem;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-header-2 {
+  font-size: 3.10rem;
+  font-weight: 600;
+  line-height: 2.10rem;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-header-3 {
+  font-size: 2.80rem;
+  font-weight: 600;
+  line-height: 2.10rem;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-header-4 {
+  font-size: 2.50rem;
+  font-weight: 600;
+  line-height: 2.10rem;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-header-5 {
+  font-size: 2.20rem;
+  font-weight: 600;
+  line-height: 2.10rem;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-header-6 {
+  font-size: 1.90rem;
+  font-weight: 600;
+  line-height: 2.10rem;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-subheader-strong {
+  font-size: 1.70rem;
+  font-weight: 600;
+  line-height: 2.10rem;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-subheader-emphasized {
+  font-size: 1.70rem;
+  font-weight: 500;
+  line-height: 2.10rem;
+  letter-spacing: -0.015em;
+}
+
+@mixin font-subheader {
+  font-size: 1.70rem;
+  font-weight: 400;
+  line-height: 2.10rem;
+  letter-spacing: -0.015em;
+}
+
 @mixin font-text-strong {
   font-size: 1.50rem;
   font-weight: 600;
