@@ -5,6 +5,60 @@
   position: relative;
 }
 
+:host(.small):has(console-avatar-mark[color="red"]),
+:host(.regular):has(console-avatar-mark[color="red"]),
+:host(.big):has(console-avatar-mark[color="red"]) {
+  --mark-color: #E50000;
+}
+
+:host(.small):has(console-avatar-mark[color="green"]),
+:host(.regular):has(console-avatar-mark[color="green"]),
+:host(.big):has(console-avatar-mark[color="green"]) {
+  --mark-color: #00CC45;
+}
+
+:host(.small):has(console-avatar-mark[color="orange"]),
+:host(.regular):has(console-avatar-mark[color="orange"]),
+:host(.big):has(console-avatar-mark[color="orange"]) {
+  --mark-color: #E58A00;
+}
+
+:host(.small):has(console-avatar-mark[color="blue"]),
+:host(.regular):has(console-avatar-mark[color="blue"]),
+:host(.big):has(console-avatar-mark[color="blue"]) {
+  --mark-color: #0093E5;
+}
+
+:host(.small):has(console-avatar-mark[color="yellow"]),
+:host(.regular):has(console-avatar-mark[color="yellow"]),
+:host(.big):has(console-avatar-mark[color="yellow"]) {
+  --mark-color: #E5DC00;
+}
+
+:host(.small):has(console-avatar-mark[color="cyan"]),
+:host(.regular):has(console-avatar-mark[color="cyan"]),
+:host(.big):has(console-avatar-mark[color="cyan"]) {
+  --mark-color: #00E5E5;
+}
+
+:host(.small):has(console-avatar-mark[color="navy"]),
+:host(.regular):has(console-avatar-mark[color="navy"]),
+:host(.big):has(console-avatar-mark[color="navy"]) {
+  --mark-color: #0017E5;
+}
+
+:host(.small):has(console-avatar-mark[color="purple"]),
+:host(.regular):has(console-avatar-mark[color="purple"]),
+:host(.big):has(console-avatar-mark[color="purple"]) {
+  --mark-color: #8E00E5;
+}
+
+:host(.small):has(console-avatar-mark[color="magenta"]),
+:host(.regular):has(console-avatar-mark[color="magenta"]),
+:host(.big):has(console-avatar-mark[color="magenta"]) {
+  --mark-color: #E500CF;
+}
+
 :host(.small) {
   width: 25px;
   height: 25px;
@@ -30,7 +84,7 @@
   width: 5.50px;
   height: 5.50px;
   border-radius: 5.50px;
-  background: #f75050;
+  background: var(--mark-color);
 }
 
 :host(.regular) {
@@ -58,7 +112,7 @@
   width: 7.75px;
   height: 7.75px;
   border-radius: 7.75px;
-  background: #f75050;
+  background: var(--mark-color);
 }
 
 :host(.big) {
@@ -86,7 +140,7 @@
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  background: #f75050;
+  background: var(--mark-color);
 }
 
 :host(.small):has(console-avatar-mark),

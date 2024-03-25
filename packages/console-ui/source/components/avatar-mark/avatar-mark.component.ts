@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
@@ -7,4 +7,16 @@ import { Component } from '@angular/core'
   styleUrl: 'avatar-mark.component.scss',
   imports: [],
 })
-export class AvatarMark {}
+export class AvatarMark {
+  public color = input.required<
+    | 'red'
+    | 'green'
+    | 'orange'
+    | 'blue'
+    | 'yellow'
+    | 'cyan'
+    | 'navy'
+    | 'purple'
+    | 'pink'
+  >()
+}
