@@ -1,4 +1,6 @@
 :host {
-  display: block;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25px;
 }

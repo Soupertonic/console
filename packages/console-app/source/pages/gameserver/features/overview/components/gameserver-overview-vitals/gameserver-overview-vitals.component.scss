@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25px;
+}
+
+console-section-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow: scroll;
+}
+
+console-meter {
+  flex: none;
+}

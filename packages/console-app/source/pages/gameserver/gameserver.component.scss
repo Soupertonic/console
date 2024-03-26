@@ -1,13 +1,15 @@
 :host {
   height: 100vh;
   display: flex;
-  gap: 2.00px;
+  gap: 1.25px;
 }
 
 console-gameserver-sidebar {
-  flex-basis: 275px;
+  width: 275px;
 }
 
 console-gameserver-outlet {
   flex: 1;
 }
+
+

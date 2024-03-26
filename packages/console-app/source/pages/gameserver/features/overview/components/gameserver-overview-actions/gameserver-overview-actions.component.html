@@ -1,0 +1,33 @@
+<console-section>
+  <console-section-header i18n="@@gameserver.overview.section.vitals">
+    <console-icon identifier="lightning" size="regular" />
+    &nbsp;
+    Actions
+  </console-section-header>
+  <console-section-content>
+    <console-button (click)="dispatchAction('')" action="dangerous" mode="packed" size="small" alignment="start">
+      <console-button-icon identifier="grid-1x2" size="small" slot="start" />
+      <console-button-label>
+        Herunterfahren
+      </console-button-label>
+    </console-button>
+    <console-button (click)="dispatchAction('')" action="risky" mode="packed" size="small" alignment="start">
+      <console-button-icon identifier="grid-1x2" size="small" slot="start" />
+      <console-button-label>
+        Neuladen
+      </console-button-label>
+    </console-button>
+    <console-button (click)="dispatchAction('')" action="safe" mode="packed" size="small" alignment="start">
+      <console-button-icon identifier="grid-1x2" size="small" slot="start" />
+      <console-button-label>
+        Neustarten
+      </console-button-label>
+    </console-button>
+    <console-button (click)="dispatchAction('')" action="secondary" mode="packed" size="small" alignment="start">
+      <console-button-icon identifier="grid-1x2" size="small" slot="start" />
+      <console-button-label>
+        Alle Spieler kicken
+      </console-button-label>
+    </console-button>
+  </console-section-content>
+</console-section>
